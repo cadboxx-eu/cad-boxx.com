@@ -1,0 +1,209 @@
+/* Responsivo */
+@media (max-width: 768px) {
+  body {
+    overflow-x: hidden;
+  }
+  i {
+    padding: 1rem;
+    font-size: 2rem;
+  }
+  /* Navbar */
+  #navbar {
+    display: none;
+  }
+  #menu,
+  #close-menu {
+    display: block;
+  }
+  /* Header, Banner */
+  #header {
+    min-height: 55vh;
+    margin-bottom: 1rem;
+  }
+  .banner {
+    padding: 1.8rem;
+  }
+ .banner h2 {
+  font-size: 2rem;
+ }
+ .banner p {
+  font-size: .9rem;
+ }
+ .square {
+  display: none;
+  /* width: 6.375rem;
+  height: 4.375rem;
+  left: 1.25rem;
+  top: 1.5rem; */
+ }
+ /* Áreas de atuacao */
+.text-container {
+  flex: auto;
+  gap: 1rem;
+  text-align: center;
+}
+.section-title {
+  font-size: 1.3rem;
+}
+.section-subtitle {
+  font-size: .9rem;
+}
+.btn {
+  padding: 1rem 1rem;
+  font-size: 1rem;
+  align-self: center;
+  margin-bottom: 1rem;
+}
+.text-container {
+  gap: 1rem;
+}
+/* Outros servicos */
+#other-services {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  padding: 0;
+  gap: .5rem;
+  overflow-y: hidden;
+}
+.service-info {
+  padding: 1rem 1rem;
+}
+.service h4 {
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+}
+/* About */
+#about {
+  flex-direction: column;
+  gap: 0;
+}
+/* Depoimentos */
+.text-image-section {
+  gap: 0;
+}
+/* Footer */
+#footer {
+  flex-wrap: wrap;
+}
+#footer i {
+  text-align: center;
+}
+
+.footer-brand {
+  text-align: center;
+}
+
+.networks {
+  margin-bottom: 3rem;
+}
+
+.links-container {
+  margin-bottom: 1rem;
+}
+
+.links-container h4 {
+  margin-bottom: 1.5rem;
+}
+#contact {
+  padding-bottom: 1rem;
+}
+.contact-info, 
+.links-container {
+  width: 100%;
+}
+
+}
+
+@media (max-width: 450px) {
+
+  /* Navbar */
+  #navbar {
+    display: none;
+  }
+  #menu,
+  #close-menu {
+    display: block;
+  }
+
+
+  /* Titles, subtitles */
+  #expertise-information {
+    text-align: center;
+  }
+  /* Áreas de atuacao */
+  .btn {
+    align-self: initial;
+  }
+
+  .image-container {
+    flex: 1 1 100%;
+  }
+
+  #other-services {
+    flex-wrap: wrap;
+  }
+
+  /* About */
+  #about {
+    gap: 0;
+  }
+
+  #about-text, 
+  #about-data {
+    flex: 1 1 100%;
+  }
+
+  .about-description{
+    gap: 1rem;
+  }
+
+  .about-description i {
+    padding: 0;
+    max-width: 2.5rem;
+  }
+
+  #about #about-data .data {
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid var(--secondary-text-color);
+  }
+
+  /* Depoimentos */
+  .text-container {
+    text-align: center;
+    padding: 2rem;
+  }
+
+  /* Colaboradores */
+  #team {
+    margin-top: 2rem;
+    margin-bottom: 1.5rem;
+  }
+
+  #team h2 {
+    font-size: 2.5rem;
+  }
+
+  .employees {
+    flex-wrap: wrap;
+  }
+
+  /* Contato */
+  #contact {
+    padding-bottom: 0;
+  }
+
+  #contact-information {
+    padding:  4rem 1rem;
+  }
+
+  #contact-information .form-control {
+    flex-direction: column;
+  }
+
+  #contact-information .btn {
+    align-self: auto;
+  }
+
+  
+}

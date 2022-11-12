@@ -1,0 +1,34 @@
+/* Depoimentos */
+#testimonials {
+  display: flex;
+  align-items: center;
+}
+
+#testimonial-information {
+  padding: 3rem;
+}
+
+.author {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  gap: 1rem;
+}
+
+.author .author-name {
+  color: var(--main-color);
+  text-transform: uppercase;
+  font-size: 1.3rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.author .author-job {
+  color: var(--secondary-text-color);
+}
+
+.author img {
+  width: 6.25rem;
+  height: 6.25rem;
+}
+

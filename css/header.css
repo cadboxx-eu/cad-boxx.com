@@ -1,0 +1,89 @@
+/* Header e banner */
+#header {
+  min-height: 90vh;
+  background-image: url(../img/main_banner4.png);
+  background-size: cover;
+  background-position: center;
+  color: var(--primary-text-color);
+  margin-bottom: 2rem;
+  position: relative;
+}
+
+#inner-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#brand {
+  background-color: var(--main-color);
+  padding: 1rem;
+}
+
+#navbar {
+  display: flex;
+  gap: 4rem;
+  text-transform: uppercase;
+  margin-right: 2rem;
+}
+
+#navbar a {
+  color: var(--primary-text-color);
+  font-weight: bold;
+}
+
+#navbar a:hover {
+  color: #ffffffaf;
+}
+
+.banner.active {
+  opacity: 1;
+}
+
+.banner {
+  max-width: 50%;
+  padding: 4rem;
+  opacity: 0;
+  position: absolute;
+  transition: .6s;
+}
+
+.banner h2 {
+  font-size: 4rem;
+  margin-bottom: 1.2rem;
+  position: relative;
+  z-index: 2;
+}
+
+.banner p {
+  font-size: 1.5rem;
+}
+
+.square {
+  display: block;
+  width: 9.375rem;
+  height: 9.375rem;
+  background-color: var(--main-color);
+  position: absolute;
+  z-index: 1;
+  left: 1.25rem;
+  top: 2.5rem;
+}
+
+.dots {
+  display: flex;
+  gap: 2rem;
+  position: absolute;
+  bottom: 3rem;
+  left: 3rem;
+}
+
+.dot {
+  width: 20px;
+  height: 20px;
+  background-color: var(--secondary-color);
+}
+
+.dot.active {
+  background-color: var(--main-color);
+}
