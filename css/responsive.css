@@ -31,10 +31,11 @@
  }
  .square {
   display: none;
-  /* width: 6.375rem;
-  height: 4.375rem;
-  left: 1.25rem;
-  top: 1.5rem; */
+ }
+
+ .dots {
+  bottom: 1rem;
+  left: 15rem;
  }
  /* Áreas de atuacao */
 .text-container {
