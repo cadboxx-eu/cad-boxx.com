@@ -1,5 +1,3 @@
-// Seleção de elementos
-
 // Selecao do menu
 const menuBtn = document.querySelector("#menu");
 const closeMenuBtn = document.querySelector("#close-menu");
@@ -15,8 +13,7 @@ const slides = document.querySelectorAll(".banner");
 const dots = document.querySelectorAll(".dot");
 let slideIndex = 0;
 
-// Funções
-
+// -------------------------- Funções
 // Close/Open menu mobile
 function handleClick() {
   menu.classList.toggle("menu-active");
@@ -58,9 +55,9 @@ function showSlides() {
 
   setTimeout(showSlides, 3000);
 }
+showSlides();
 
-// Eventos
-
+// -------------------------- Eventos
 // Close/Open menu mobile
 [menuBtn, closeMenuBtn].forEach((botao) => {
   botao.addEventListener("click", handleClick);
@@ -71,5 +68,4 @@ allLinks.forEach((links) => {
   links.addEventListener("click", smoothScroll);
 });
 
-// Inicialização
-showSlides();
+
