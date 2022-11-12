@@ -72,4 +72,4 @@ allLinks.forEach((links) => {
 });
 
 // Inicialização
-// showSlides();
+showSlides();
