@@ -40,6 +40,10 @@
   left: 13rem;
  }
  /* Áreas de atuacao */
+ #expertise-areas #expertise-information, 
+ #expertise-areas #expertise-image-container {
+  margin-bottom: 1rem;
+ }
 .text-container {
   flex: auto;
   gap: 1rem;
@@ -49,7 +53,7 @@
   font-size: 1.3rem;
 }
 .section-subtitle {
-  font-size: .9rem;
+  font-size: 1.5rem;
 }
 .btn {
   padding: 1rem 1rem;
