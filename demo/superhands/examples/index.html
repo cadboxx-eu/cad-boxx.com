@@ -1,0 +1,117 @@
+<html>
+  <head>
+    <title>Types of device and environment.</title>
+    <style>
+      html {
+        background: #33425B;
+        color: #FAFAFA;
+        font-family: sans-serif;
+        font-size: 20px;
+        padding: 10px 20px;
+        max-width: 41em;
+        margin: 0 auto;
+      }
+      h1,h2 {
+        font-weight: 300;
+        font-family: serif;
+      }
+      a {
+        color: #FAFAFA;
+      }
+      a.example {
+        padding: 15px 0;
+        font-size: 24px;
+        display: block;
+      }
+      code, pre {
+        font-family: monospace;
+        background-color: #3f506d;
+        color: #BBB;
+      }
+      .unemph {
+        font-size: smaller;
+        color: #BBB;
+      }
+      .preview {
+        width: 192px;
+        height: 96px;
+        display: block;
+        margin: 3px 0px;
+        float: left;
+      }
+      .bonus {
+        color: #f4f4a1;
+        background-color: #3f506d7e;
+        font-size: 18px;
+        width: 93px;
+        height: 96px;
+        float: left;
+        margin: 3px 0px;
+        padding: 0 0 0 5px;
+        position: absolute;
+        overflow: hidden;
+      }
+      .bonus::after {
+        content: 'Motion-Captured Preview Available'
+      }
+      .bonus+p, .preview+p, .example + p {
+        clear: both;
+      }
+     </style>
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/showdown/1.9.1/showdown.min.js"></script>
+  </head>
+  <body>
+    <h1>A-Frame Super Hands Component</h1>
+    <p>This is the examples page for the
+      <a href="http://github.com/wmurphyrd/aframe-super-hands-component">
+        super-hands A-Frame component package
+      </a>
+      for super-easy hand controller interactivity in A-Frame WebVR experiences.
+    </p>
+    <a id="physics" class="example" href="physics/">Hand controls
+      with physics<br />
+      <img class="preview" src="./assets/physics.jpg"/>
+      <!-- <div class="bonus"></div> -->
+    </a>
+    <p><a href="physics/index-mouse.html">Mouse cursor based version for desktop</a></p>
+    <p><ul>
+      <li>Grabbed boxes lock position and rotation to controller</li>
+      <li><code>color-randomizer</code> changes the color of entities dropped inside of the color changer box</li>
+      <li>Boxes can be stretched with two hands to change size, updating their physics bodies</li>
+    </ul></p>
+    <p>Example of super-hands interactivity with roomscale tracked controllers
+       and <code>aframe-physics-system</code>. Also showcases creating a simple
+       custom reaction component.</p>
+    
+    <p class = "unemph">Credit for random color generator code: <a href="http://stackoverflow.com/questions/1484506/random-color-generator-in-javascript#comment6801353_5365036">Mohsen via StackOverflow</a></p>
+    <a id="mouse" class="example" href="mouse/">
+      Gaze and laser pointer controls without physics
+      <br />
+      <img class="preview" src="./assets/hand-controls.jpg"/>
+      <!-- <div class="bonus"></div> -->
+    </a>
+    <p><a href="mouse/index-mouse.html">Mouse cursor based version for desktop</a></p>
+    <p><ul>
+      <li>Grabbed entities move by controller position and rotation</li>
+      <li>Drag-drop targets and their hovering entity appear in wireframe</li>
+      <li>Entities change to spheres upon completing drag-drop interaction via the
+        <code>event-set</code> component listening for the 'drag-drop' event</li>
+    </ul></p>
+    
+  <!--
+    <a id="sticky" class="example" href="sticky/">Sticky Grab via
+      Custom Button Mapping<br />
+      <img class="preview" src="./assets/sticky.jpg"/>
+    </a>
+    <p>Example of customizing the button event schema options</p>
+    <ul>
+      <li>Press trigger to lock bat to controller</li>
+      <li>Knock some balls around</li>
+      <li>Press trackpad to drop the bat</li>
+      <li>Stretch the balls by pressing both trackpads</li>
+    </ul>
+  -->
+    
+  </body>
+  
+</html>
