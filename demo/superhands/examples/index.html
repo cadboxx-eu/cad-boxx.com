@@ -39,6 +39,13 @@
         margin: 3px 0px;
         float: left;
       }
+        .headimg {
+            width: 500px;
+            justify-content:center;
+            display: block;
+            margin: auto;
+            float: left;
+        }
       .bonus {
         color: #f4f4a1;
         background-color: #3f506d7e;
@@ -61,57 +68,86 @@
      <script src="https://cdnjs.cloudflare.com/ajax/libs/showdown/1.9.1/showdown.min.js"></script>
   </head>
   <body>
-    <h1>A-Frame Super Hands Component</h1>
-    <p>This is the examples page for the
-      <a href="http://github.com/wmurphyrd/aframe-super-hands-component">
-        super-hands A-Frame component package
+      <div width="100%" height="400px" display="inline-block" margin="auto" align-content="center">
+          <!--<button type="image" src="https://cdn.glitch.global/2a3af8bb-e7b2-4e50-8ce2-68e3e8cf4538/team220x255.png?v=1659787571916" target="_blank" href="superhands/examples/mouse/mouse-index.html" name="submit" width="300" height="300" alt="submit"></button>-->
+
+          <button onclick="window.open('examples/mouse/index-mouse.html')">
+              <image src="https://cdn.glitch.global/2a3af8bb-e7b2-4e50-8ce2-68e3e8cf4538/team220x255.png?v=1659787571916 " width="15%" height="100%"></image>
+          </button>
+          <button onclick="window.open('examples/physics/index-laser.html')">
+              <image src="https://cdn.glitch.global/2a3af8bb-e7b2-4e50-8ce2-68e3e8cf4538/team220x255.png?v=1659787571916 " width="15%" height="100%"></image>
+          </button>
+          <button onclick="window.open('examples/index.html')">
+              <image src="../img/mouse.png" width="15%" height="100%"></image>
+          </button>
+          <button onclick="window.open('examples/mouse/index-mouse.html')">
+              <image src="https://cdn.glitch.global/2a3af8bb-e7b2-4e50-8ce2-68e3e8cf4538/team220x255.png?v=1659787571916 " width="15%" height="100%"></image>
+          </button>
+          <button onclick="window.open('demo/superhands/examples/physics/index-mouse.html')">
+              <image src="https://cdn.glitch.global/2a3af8bb-e7b2-4e50-8ce2-68e3e8cf4538/team220x255.png?v=1659787571916 " width="15%" height="100%"></image>
+          </button>
+
+      </div>
+      <div><img src="../img/env-vr.jpg" style="width:400px;height:200px" /></div>
+      <h1>This is the demonstration Hub for cadboxx</h1>
+      <p>
+          All demo´s are user-interactive and do not require reguatration. Sign up after trying it
+          <button href="https://store.cad-boxx.com/">Sign-Up</button>
+          Create new Models with or without textures, and integrate translation / rotation into the model.
+      </p>
+      <a id="physics" class="example" href="physics/">
+          Hand controls
+          with physics<br />
+          <img class="preview" src="" />
+      
       </a>
-      for super-easy hand controller interactivity in A-Frame WebVR experiences.
-    </p>
-    <a id="physics" class="example" href="physics/">Hand controls
-      with physics<br />
-      <img class="preview" src="./assets/physics.jpg"/>
-      <!-- <div class="bonus"></div> -->
-    </a>
-    <p><a href="physics/index-mouse.html">Mouse cursor based version for desktop</a></p>
-    <p><ul>
-      <li>Grabbed boxes lock position and rotation to controller</li>
-      <li><code>color-randomizer</code> changes the color of entities dropped inside of the color changer box</li>
-      <li>Boxes can be stretched with two hands to change size, updating their physics bodies</li>
-    </ul></p>
-    <p>Example of super-hands interactivity with roomscale tracked controllers
-       and <code>aframe-physics-system</code>. Also showcases creating a simple
-       custom reaction component.</p>
-    
-    <p class = "unemph">Credit for random color generator code: <a href="http://stackoverflow.com/questions/1484506/random-color-generator-in-javascript#comment6801353_5365036">Mohsen via StackOverflow</a></p>
-    <a id="mouse" class="example" href="mouse/">
-      Gaze and laser pointer controls without physics
-      <br />
-      <img class="preview" src="./assets/hand-controls.jpg"/>
-      <!-- <div class="bonus"></div> -->
-    </a>
-    <p><a href="mouse/index-mouse.html">Mouse cursor based version for desktop</a></p>
-    <p><ul>
-      <li>Grabbed entities move by controller position and rotation</li>
-      <li>Drag-drop targets and their hovering entity appear in wireframe</li>
-      <li>Entities change to spheres upon completing drag-drop interaction via the
-        <code>event-set</code> component listening for the 'drag-drop' event</li>
-    </ul></p>
-    
-  <!--
-    <a id="sticky" class="example" href="sticky/">Sticky Grab via
-      Custom Button Mapping<br />
-      <img class="preview" src="./assets/sticky.jpg"/>
-    </a>
-    <p>Example of customizing the button event schema options</p>
-    <ul>
-      <li>Press trigger to lock bat to controller</li>
-      <li>Knock some balls around</li>
-      <li>Press trackpad to drop the bat</li>
-      <li>Stretch the balls by pressing both trackpads</li>
-    </ul>
-  -->
-    
+      <p><a href="physics/index-mouse.html">Mouse cursor based version for desktop</a></p>
+      <p>
+          <ul>
+              <li>Grabbed boxes lock position and rotation to controller</li>
+              <li><code>color-randomizer</code> changes the color of entities dropped inside of the color changer box</li>
+              <li>Boxes can be stretched with two hands to change size, updating their physics bodies</li>
+          </ul>
+      </p>
+      <p>
+          Example of super-hands interactivity with roomscale tracked controllers
+          and <code>aframe-physics-system</code>. Also showcases creating a simple
+          custom reaction component.
+      </p>
+
+      <p class="unemph">Credit for random color generator code: <a href="http://stackoverflow.com/questions/1484506/random-color-generator-in-javascript#comment6801353_5365036">Mohsen via StackOverflow</a></p>
+      <a id="mouse" class="example" href="mouse/">
+          Gaze and laser pointer controls without physics
+          <br />
+          <img class="preview" src="./assets/hand-controls.jpg" />
+          <!-- <div class="bonus"></div> -->
+      </a>
+      <p><a href="mouse/index-mouse.html">Mouse cursor based version for desktop</a></p>
+      <p>
+          <ul>
+              <li>Grabbed entities move by controller position and rotation</li>
+              <li>Drag-drop targets and their hovering entity appear in wireframe</li>
+              <li>
+                  Entities change to spheres upon completing drag-drop interaction via the
+                  <code>event-set</code> component listening for the 'drag-drop' event
+              </li>
+          </ul>
+      </p>
+
+      <!--
+      <a id="sticky" class="example" href="sticky/">Sticky Grab via
+        Custom Button Mapping<br />
+        <img class="preview" src="./assets/sticky.jpg"/>
+      </a>
+      <p>Example of customizing the button event schema options</p>
+      <ul>
+        <li>Press trigger to lock bat to controller</li>
+        <li>Knock some balls around</li>
+        <li>Press trackpad to drop the bat</li>
+        <li>Stretch the balls by pressing both trackpads</li>
+      </ul>
+    -->
+
   </body>
   
 </html>

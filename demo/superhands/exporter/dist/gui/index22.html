@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Navigation Menus</title>
+	<script src="https://aframe.io/releases/0.6.0/aframe.min.js"></script>
+	<script src="https://unpkg.com/aframe-navigation/dist/aframe-navigation.min.js"></script>
+</head>
+
+<body>
+	<a-scene>
+		<a-entity nav-layout="navMapUrl:URL_HERE; layoutView:new_view_too"></a-entity>
+		<a-entity laser-controls="hand: right" raycaster="objects: .interactive"></a-entity>
+	</a-scene>
+</body>
+</html>
