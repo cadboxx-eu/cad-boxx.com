@@ -361,7 +361,7 @@
                              class="clickable" event-set__enter="_event: mouseenter; color: #026fc9" event-set__leave="_event: mouseleave; color: #4CC3D9"
                              static-body></a-mixin>
                     <a-mixin id="hinge-bodya" gltf-model="#cb1" position="0 0 0" rotation="0 0 0" scale="1 1 1" dynamic-body click-impulse></a-mixin>
-                    <a-mixin id="hinge-bodyb" gltf-model="#ccyl1" position="0 2.5 0" rotation="0 0 0" scale="2 1 2"
+                    <a-mixin id="hinge-bodyb" gltf-model="#cb1" position="0 2.5 0" rotation="0 0 0" scale="2 1 2"
                              constraint="type:hinge;target:#bodya;axis:0 1 0;targetAxis:0 1 0;pivot:0 0 0;targetPivot:0 2.5 0"
                              dynamic-body click-impulse></a-mixin>
                     <a-mixin id="hinge-bottom-bodya" gltf-model="#cbplane" position="0 0 0" rotation="0 0 0" scale="1 1 1" dynamic-body click-impulse></a-mixin>
@@ -401,19 +401,30 @@
 
                 </a-assets>
 
-                <a-entity class="cube" mixin="cube" position="0 2.5 -2" material="color: red"></a-entity>
+                <a-entity class="cube" mixin="cube" position="0 2.5 -.2" material="color: red"></a-entity>
                 <a-entity class="cube" mixin="cube" position="0 2.5 -2.5" material="color: red"></a-entity>
-                <a-entity class="cube" mixin="cube" position="-2.5 2.5 -2" material="color: blue"></a-entity>
+                <a-entity class="cube" mixin="cube" position="-2.5 2.5 -.2" material="color: blue"></a-entity>
                 <a-entity class="cube" mixin="cube" position="-2.5 2.5 -2.5" material="color: blue"></a-entity>
-                <a-entity class="cube" mixin="cube" position="2.5 2.5 -2" material="color: green"></a-entity>
+                <a-entity class="cube" mixin="cube" position="2.5 2.5 -.2" material="color: green"></a-entity>
                 <a-entity class="cube" mixin="cube" position="2.5 2.5 -2.5" material="color: green"></a-entity>
 
                 <a-entity sphere-collider="objects: a-box; a-cylinder; a-tube; a-sphere; a-plane; a-dodecahedron; a-octahedron; a-tetrahedron" super-hands hand-controls="hand: left"></a-entity>
                 <a-entity sphere-collider="objects: a-box; a-cylinder; a-tube; a-sphere; a-plane; a-dodecahedron; a-octahedron; a-tetrahedron" super-hands hand-controls="hand: right"></a-entity>
 
                 <!-- hover & drag-drop won't have any obvious effect without some additional event handlers or components. See the examples page for more -->
-                <a-gltf-model id="bbxx1" src="#cb1" class="clickable" position="0 2 -1"></a-gltf-model>
                 
+                <a-gltf-model id="bbxx1" mixin="#hinge-bodya" class="clickable" position="0 2 0" rotation="0 0 0" scale="1 1 1"
+                              static-body click-impulse>
+                    <a-gltf-model id="bbxx11" mixin="#hinge-bodyb" class="clickable" position="0 2 0" rotation="0 0 0" scale="1 1 1"
+                                  dynamic-body click-impulse>
+                        <a-gltf-model id="bbxx111" mixin="#hinge-bodyb" class="clickable" position="0 2 0" rotation="0 0 0" scale="1 1 1"
+                                      dynamic-body click-impulse>
+
+                        </a-gltf-model>
+                    </a-gltf-model>
+                </a-gltf-model>
+                
+                <!--
                 <a-gltf-model id="bbxx2" src="#cb1" class="clickable" position="0 2 -1"></a-gltf-model>
                 <a-gltf-model id="bbxx3" src="#cb1" class="clickable" position="0 2 -1"></a-gltf-model>
                 <a-gltf-model id="bbxx4" src="#cb1" class="clickable" position="0 2 -1"></a-gltf-model>
@@ -421,7 +432,7 @@
                 <a-gltf-model id="bbxx6" src="#cb1" class="clickable" position="0 2 -1"></a-gltf-model>
                 <a-gltf-model id="bbxx7" src="#cb1" class="clickable" position="0 2 -1"></a-gltf-model>
                 <a-gltf-model id="bbxx1" src="#cb1" class="clickable" position="0 2 -1"></a-gltf-model>
-                
+                -->
                 <a-entity id="assy01" mixin="plne1" ></a-entity>
                 <!--
     <a-entity camera look-controls orbit-controls="target: 0 0 0; minDistance: 0.5; maxDistance: 10; initialPosition: 0 2 7"></a-entity>
