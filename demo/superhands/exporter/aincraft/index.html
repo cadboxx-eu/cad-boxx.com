@@ -5,39 +5,113 @@
     <title>Aincraft</title>
     <meta name="description" content="Aincraft">
     <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
-    <script src="https://unpkg.com/aframe-teleport-controls@0.2.0/dist/aframe-teleport-controls.min.js"></script>
-    <script src="https://unpkg.com/aframe-controller-cursor-component@0.2.2/dist/aframe-controller-cursor-component.min.js"></script>
-    <script src="https://rawgit.com/ngokevin/aframe-motion-capture/343f99/dist/aframe-motion-capture.min.js"></script>
+    <script src="https://unpkg.com/aframe-animation-component@3.2.1/dist/aframe-animation-component.min.js"></script>
+    <script src="https://unpkg.com/aframe-particle-system-component@1.0.x/dist/aframe-particle-system-component.min.js"></script>
+    <script src="https://unpkg.com/aframe-extras.ocean@%5E3.5.x/dist/aframe-extras.ocean.min.js"></script>
+    <script src="https://unpkg.com/aframe-gradient-sky@1.0.4/dist/gradientsky.min.js"></script>
+    <script src="https://unpkg.com/aframe-environment-component@1.1.0/dist/aframe-environment-component.min.js"></script>
+    <script src="https://unpkg.com/super-hands/dist/super-hands.min.js"></script>
+    <script src="https://cdn.rawgit.com/donmccurdy/aframe-physics-system/v3.1.2/dist/aframe-physics-system.min.js"></script>
+    <script src="https://unpkg.com/aframe-event-set-component@^4.1.1/dist/aframe-event-set-component.min.js"></script>
+    <script src="https://unpkg.com/aframe-physics-extras/dist/aframe-physics-extras.min.js"></script>
+    <script src="https://rawgit.com/feiss/aframe-environment-component/master/dist/aframe-environment-component.min.js"></script>
+    <script src="https://unpkg.com/aframe-ground-component@0.0.4/dist/aframe-ground-component.min.js"></script>
+    <script src="https://unpkg.com/aframe-snapto-component/dist/aframe-snapto-component.js"></script>
 
-    <script src="components/intersection-spawn.js"></script>
-    <script src="components/random-color.js"></script>
-    <script src="components/snap.js"></script>
+    <script src="https://unpkg.com/aframe-touch-inspector@1.1.2/dist/aframe-inspector.min.js"></script>
+    <script src="https://unpkg.com/aframe-layout-component@4.3.1/dist/aframe-layout-component.min.js"></script>
+    <script src="https://unpkg.com/aframe-orbit-controls@1.2.0/dist/aframe-orbit-controls.min.js"></script>
+
+    <script src="https://unpkg.com/super-hands/dist/super-hands.min.js"></script>
+    <script src="https://rawgit.com/feiss/aframe-environment-component/master/dist/aframe-environment-component.min.js"></script>
+    <script src="https://unpkg.com/aframe-datgui-component/dist/aframe-datgui-component.min.js"></script>
+    <script src="https://cdn.rawgit.com/donmccurdy/aframe-physics-system/v4.0.1/dist/aframe-physics-system.min.js"></script>
+    <script src="https://unpkg.com/aframe-physics-extras@0.1.2/dist/aframe-physics-extras.min.js"></script>
+    <script src="https://cdn.rawgit.com/gftruj/aframe-physics-spring/master/dist/aframe-spring.min.js"></script>
+    <script src="https://unpkg.com/aframe-spherical-controls-component/dist/aframe-spherical-controls-component.min.js"></script>
+    <script src="https://rawgit.com/chenzlabs/auto-detect-controllers/master/dist/aframe-auto-detect-controllers-component.min.js"></script>
+    <script src="https://unpkg.com/aframe-gltf-helpers@0.0.2/dist/aframe-gltf-helpers.min.js"></script>
+    <script src="https://rawgit.com/dbradleyfl/aframe-gridhelper/master/dist/aframe-gridhelper-component.min.js"></script>
+    <script src="https://rawgit.com/dbradleyfl/aframe-selectable-light-component/master/dist/aframe-selectable-light-component.min.js"></script>
+    <script src="https://unpkg.com/aframe-event-set-component@3.0.3/dist/aframe-event-set-component.min.js"></script>
+    <script src="https://unpkg.com/aframe-csg-meshs/index.js"></script>
+
+    <!--<script src="https://aframe.io/releases/0.5.0/aframe.min.js"></script>
+    -->
+    <script src="https://unpkg.com/aframe-teleport-controls@0.2.x/dist/aframe-teleport-controls.min.js"></script>
+    <script src="https://unpkg.com/aframe-controller-cursor-component@0.2.x/dist/aframe-controller-cursor-component.min.js"></script>
+    <script src="https://rawgit.com/ngokevin/kframe/csstricks/scenes/aincraft/components/random-color.js"></script>
+    <script src="https://rawgit.com/ngokevin/kframe/csstricks/scenes/aincraft/components/snap.js"></script>
+    <script src="https://rawgit.com/ngokevin/kframe/csstricks/scenes/aincraft/components/intersection-spawn.js"></script>
+    <script src=""></script>
+    <script src=""></script>
+    <script src=""></script>
+    <script src=""></script>
+    <script src=""></script>
+    <script src=""></script>
+    <script src=""></script>
+
+
 </head>
 <body>
-    <a-scene avatar-recorder>
-        <a-assets>
+    <a-scene gridhelper="size:30;divisions:30;colorGrid:white;colorCenterLine:red"  >
+        <a-assets >
             <img id="groundTexture" src="https://cdn.aframe.io/a-painter/images/floor.jpg">
             <img id="skyTexture" src="https://cdn.aframe.io/a-painter/images/sky.jpg">
             <a-mixin id="voxel"
-                     geometry="primitive: box; height: 0.5; width: 0.5; depth: 0.5"
+                     geometry="primitive: box; height:1.0; width: 1.0; depth: 1.0"
                      material="shader: standard"
                      random-color
-                     snap="offset: 0.25 0.25 0.25; snap: 0.5 0.5 0.5"></a-mixin>
+                     snap="offset: 0.5 0.5 0.5; snap: 1 1 1"></a-mixin>
         </a-assets>
 
-        <a-sky id="bg" radius="30" src="#skyTexture" theta-length="90"></a-sky>
-        <a-entity light="type:hemisphere;intensity:2.0" ></a-entity>
-        <a-cylinder id="ground" src="#groundTexture" radius="32" height="0.1"></a-cylinder>
+        <a-entity id="planeboxx" position="0 0 0" scale="1 1 1">
+            <a-entity id="planeboxx" position="0 0 0">
+                <a-entity id="planebox" position="0 0 0">
+                    <a-plane side="double" color="green" position="0 -20 0" rotation="-90 0 0" height="40" width="40" material="" static-body></a-plane>
+                    <a-plane side="double" color="green" position="0 20 0" rotation="-90 0 0" height="40" width="40" material="" static-body></a-plane>
+                    <a-plane side="double" color="blue" position="0 0 20" rotation="0 0 0" height="40" width="40" material="" static-body></a-plane>
+                    <a-plane side="double" color="blue" position="0 0 -20" rotation="0 0 0" height="40" width="40" material="" satic-body></a-plane>
+                    <a-plane side="double" color="red" position="20 0 0" rotation="0 -90 0" height="40" width="40" material="" static-body></a-plane>
+                    <a-plane side="double" color="red" position="-20 0 0" rotation="0 90 0" height="40" width="40" material="" static-body></a-plane>
+                </a-entity>
+                <!--mesh overlay for walls-->
+                <a-box position="0 -20 0" rotation="0 0 0" width="30" depth="30" height="0.2" color="yellow" opacity="" gridhelper="size: 25;divisions:5" static-body></a-box>
+                <a-box position="0 20 0" rotation="0 0 0" width="30" depth="30" height="0.2" color="yellow" opacity="1" gridhelper="size: 25;divisions:5" static-body></a-box>
+                <a-box position="0 0 -20" rotation="90 0 0" width="30" depth="30" height="0.2" color="yellow" opacity="" gridhelper="size: 25;divisions:5" static-body></a-box>
+                <a-box position="0 0 20" rotation="90 0 0" width="30" depth="30" height="0.2" color="yellow" opacity="1" gridhelper="size: 25;divisions:5" static-body></a-box>
+                <a-box position="-20 0 0" rotation="0 0 90" width="30" depth="30" height="0.2" color="yellow" opacity="1" gridhelper="size: 25;divisions:5" static-body></a-box>
+                <a-box position="20 0 0" rotation="0 0 90" width="30" depth="30" height="0.2" color="yellow" opacity="1.0" gridhelper="size: 25;divisions:5" static-body></a-box>
+
+
+                <a-box position="0 0 -20" rotation="0 0 0" width="40" depth="0.5" height="40" color="lightblue" opacity=".1" static-body>
+                    <a-entity id="cmnd1" mixin="trigger-box1" position="-10 2 0" rotation="0 0 0" onclick="cmm1()" static-body></a-entity>
+                    <a-entity id="cmnd2" mixin="trigger-box1" position="-10 6 0" rotation="0 0 0" onclick="cmm2()" static-body></a-entity>
+                    <a-entity id="cmnd3" mixin="trigger-box1" position="-10 10 0" rotation="0 0 0" onclick="cmm3()" static-body></a-entity>
+                    <a-entity id="cmnd4" mixin="trigger-box1" position="-5 2 0" rotation="0 0 0" onclick="cmm4()" static-body></a-entity>
+                    <a-entity id="cmnd5" mixin="trigger-box1" position="-5 6 0" rotation="0 0 0" onclick="cmm5()" static-body></a-entity>
+                    <a-entity id="cmnd6" mixin="trigger-box1" position="-5 10 0" rotation="0 0 0" onclick="cmm6()" static-body></a-entity>
+                    <a-entity id="cmnd7" mixin="trigger-box1" position="0 2 0" rotation="0 0 0" onclick="cmm7()" static-body></a-entity>
+                    <a-entity id="cmnd8" mixin="trigger-box1" position="0 6 0" rotation="0 0 0" onclick="cmm8()" static-body></a-entity>
+                    <a-entity id="cmnd9" mixin="trigger-box1" position="0 10 0" rotation="0 0 0" onclick="cmm9()" static-body></a-entity>
+                    <a-entity id="cmnd10" mixin="trigger-box1" position="5 2 0" rotation="0 0 0" onclick="cmm10()" static-body></a-entity>
+                    <a-entity id="cmnd11" mixin="trigger-box1" position="5 6 0" rotation="0 0 0" onclick="cmm11()" static-body></a-entity>
+                    <a-entity id="cmnd12" mixin="trigger-box1" position="5 10 0" rotation="0 0 0" onclick="cmm12()" static-body></a-entity>
+                    <a-entity id="cmnd13" mixin="trigger-box1" position="10 2 0" rotation="0 0 0" onclick="cmm13()" static-body></a-entity>
+                    <a-entity id="cmnd14" mixin="trigger-box1" position="10 6 0" rotation="0 0 0" onclick="cmm14()" static-body></a-entity>
+                    <a-entity id="cmnd15" mixin="trigger-box1" position="10 10 0" rotation="0 0 0" onclick="cmm15()" static-body></a-entity>
+
+                </a-box>
+            </a-entity>
+        </a-entity>
+
+        <a-cylinder id="ground" color="lightblue" radius="30" height="0.001" opacity=".2" static-body grid-helper="size:3;divisions:15;ColoredCenterLine:red" ></a-cylinder>
+
+        <a-sky id="background" src="#skyTexture" theta-length="90" radius="50"></a-sky>
 
         <!-- Hands. -->
-        <a-entity id="teleHand"
-                  hand-controls="left"
-                  teleport-controls="type: parabolic; collisionEntities: [mixin='voxel'], #ground"></a-entity>
-
-        <a-entity id="blockHand"
-                  hand-controls="right"
-                  controller-cursor
-                  intersection-spawn="event: click; mixin: voxel"></a-entity>
+        <a-entity id="teleHand" hand-controls="left" teleport-controls="type: parabolic; collisionEntities: [mixin='voxel'], #ground"></a-entity>
+        <a-entity id="blockHand" hand-controls="right" controller-cursor intersection-spawn="event: click; mixin: voxel"></a-entity>
 
         <!-- Camera. -->
         <a-camera>
@@ -45,4 +119,6 @@
         </a-camera>
     </a-scene>
 </body>
+
 </html>
+
