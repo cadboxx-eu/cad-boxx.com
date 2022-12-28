@@ -126,7 +126,7 @@
 					 dynamic-body shadow>
 			</a-mixin>
 			<a-mixin id="octt" geometry="primitive: octahedron; radius: 0.5"
-					 hoverable grabbable stretchable draggable droppable
+					 hoverable grabbable stretchable draggable droppable clickable
 					 dynamic-body shadow>
 			</a-mixin>
 			<a-mixin id="dodd" geometry="primitive: dodecahedron; radius: 0.5"
@@ -215,13 +215,7 @@
 
 			<a-mixin id="" constraint="type: hinge;axis:0 1 0;targetAxis:0 1 0;pivot:0 0 0;targetPivot:0 0 0"></a-mixin>
 				-->
-			<a-mixin id="weight1" mass="1.0"></a-mixin>
-			<a-mixin id="weight2" mass="2.0"></a-mixin>
-			<a-mixin id="weight4" mass="4.0"></a-mixin>
-			<a-mixin id="weight8" mass="8.0"></a-mixin>
-			<a-mixin id="weight16" mass="16.0"></a-mixin>
-			<a-mixin id="weight32" mass="32.0"></a-mixin>
-
+			
 			<a-mixin id="trigger-box" geometry="primitive:box;width:4; depth:4; height:4; color:green; opacity:1"
 					 class="clickable" event-set__enter="_event: mouseenter; color: #026fc9" event-set__leave="_event: mouseleave; color: #4CC3D9"
 					 static-body></a-mixin>
