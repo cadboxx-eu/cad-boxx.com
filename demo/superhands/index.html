@@ -236,6 +236,8 @@
 
         /* Sixth Button */
 
+        /* Seventh Button */
+
         #button-6 {
             position: relative;
             overflow: hidden;
@@ -244,34 +246,47 @@
 
             #button-6 a {
                 position: relative;
-                transition: all .45s ease-Out;
+                left: 0;
+                transition: all .35s ease-Out;
             }
 
-        #spin {
-            width: 0;
-            height: 0;
-            opacity: 0;
-            left: 70px;
-            top: 20px;
-            transform: rotate(0deg);
-            background: none;
+        #dub-arrow {
+            width: 100%;
+            height: 100%;
+            background: #BFC0C0;
+            left: -200px;
             position: absolute;
-            transition: all .5s ease-Out;
+            padding: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: all .35s ease-Out;
+            bottom: 0;
         }
 
-        #button-6:hover #spin {
-            width: 200%;
-            height: 500%;
-            opacity: 1;
-            left: -70px;
-            top: -70px;
-            background: #BFC0C0;
-            transform: rotate(80deg);
+        #button-6 img {
+            width: 20px;
+            height: auto;
+        }
+
+        #button-6:hover #dub-arrow {
+            left: 0;
         }
 
         #button-6:hover a {
-            color: #2D3142;
+            left: 150px;
         }
+
+        @media screen and (min-width:1000px) {
+            h1 {
+                font-size: 2.2em;
+            }
+
+            #container {
+                width: 50%;
+            }
+        }
+   
 
 
         /* Seventh Button */
@@ -396,31 +411,31 @@
     <!-- Flex Container -->
     <div id="container2">
                 
-        <div class="button" id="button-7">
+        <div class="button" id="button-8">
             <div id="dub-arrow"><img src="https://github.com/atloomer/atloomer.github.io/blob/master/img/iconmonstr-arrow-48-240.png?raw=true" alt="" /></div>
             <a href="#">Upload!</a>
         </div>
-        <div class="button" id="button-7">
+        <div class="button" id="button-9">
             <div id="dub-arrow"><img src="https://github.com/atloomer/atloomer.github.io/blob/master/img/iconmonstr-arrow-48-240.png?raw=true" alt="" /></div>
             <a href="#">Download!</a>
         </div>
-        <div class="button" id="button-7">
+        <div class="button" id="button-10">
             <div id="dub-arrow"><img src="https://github.com/atloomer/atloomer.github.io/blob/master/img/iconmonstr-arrow-48-240.png?raw=true" alt="" /></div>
             <a href="#">Constrain!</a>
         </div>
-        <div class="button" id="button-7">
+        <div class="button" id="button-11">
             <div id="dub-arrow"><img src="https://github.com/atloomer/atloomer.github.io/blob/master/img/iconmonstr-arrow-48-240.png?raw=true" alt="" /></div>
             <a href="#">Impulse!</a>
         </div>
-        <div class="button" id="button-7">
+        <div class="button" id="button-12">
             <div id="dub-arrow"><img src="https://github.com/atloomer/atloomer.github.io/blob/master/img/iconmonstr-arrow-48-240.png?raw=true" alt="" /></div>
             <a href="#">Collide!</a>
         </div>
-        <div class="button" id="button-7">
+        <div class="button" id="button-13">
             <div id="dub-arrow"><img src="https://github.com/atloomer/atloomer.github.io/blob/master/img/iconmonstr-arrow-48-240.png?raw=true" alt="" /></div>
             <a href="#">Physics!</a>
         </div>
-        <div class="button" id="button-7">
+        <div class="button" id="button-14">
             <div id="dub-arrow"><img src="https://github.com/atloomer/atloomer.github.io/blob/master/img/iconmonstr-arrow-48-240.png?raw=true" alt="" /></div>
             <a href="#">Assembler!</a>
         </div>
