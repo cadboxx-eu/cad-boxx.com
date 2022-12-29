@@ -196,6 +196,7 @@
             <a-asset-item id="chlink2" src="https://cdn.glitch.com/2a3af8bb-e7b2-4e50-8ce2-68e3e8cf4538%2Fchink2.glb?v=1606822434718"></a-asset-item>
 
             <a-asset-item id="bbooxx" src="https://cdn.glitch.global/2a3af8bb-e7b2-4e50-8ce2-68e3e8cf4538/bbooxx.glb?v=1665749104206"></a-asset-item>
+            <a-assett-item id="cbb1" src="https://cdn.glitch.global/2a3af8bb-e7b2-4e50-8ce2-68e3e8cf4538/planeboxx(2).glb?v=1672309898687" position="0 1 0" rotation="0 0 0" scale=".1 .1 .1" class="clickable" dynamic-body click-impulse></a-assett-item>
 
             <a-asset-item id="prt1" src="#boxex"></a-asset-item>
             <a-asset-item id="prt2" src="#prt02"></a-asset-item>
@@ -731,47 +732,46 @@
                     </a-entity>-->
 
             <a-entity gltf-part-plus>
-                <a-entity id="bottyy" gltf-model="#bb030" position="0 0 0" rotation="0 0 0" scale="1 1 1" static-body>
-
-                </a-entity>
-                <a-entity id="toppyy" gltf-model="#cb1" position="0 1 0" class="clickable" rotation="0 0 0" scale="1 1 1"
-                          constraint="type:hinge;target:#ert;axis:0 1 0;targetAxis:0 1 0;pivot:0 0 0;targetPivot:0 1.0 0"
+                <a-gltf-model id="ref-plane" gltf-model="#bb030" position="0 0 0" rotation="0 0 0" scale="1 1 1" static-body>
+                    o
+                </a-gltf-model>
+                <a-entity gltf-part-plus="" id="toppyy" gltf-model="#cb1" position="0 1 0" class="clickable" rotation="0 0 0" scale="1 1 1"
+                          constraint="type:hinge;target:#ref-plane;axis:0 1 0;targetAxis:0 1 0;pivot:0 0 0;targetPivot:0 1 0"
                           dynamic-body click-impulse model-center="bottomAlign:true">
 
                 </a-entity>
             </a-entity>
         </a-entity>
 
-        
-            <model-gltf src="models/gltf/VC.gltf" />
+
+        <a-model-gltf id="plainbrg" src="models/gltf/VC.gltf" vr-version/networked.html
+
+        <a-entity id="ytp" websurface="url:https://aframe.io/;" position="19 10 0" rotation="0 -90 0" width="32" height="18"></a-entity>
 
 
-            <a-entity id="ytp" websurface="url:https://aframe.io/;" position="19 10 0" rotation="0 -90 0" width="32" height="18"></a-entity>
+        <a-box id="ert" position="0 3 -2" color="red" dynamic-body click-impulse></a-box>
+        <a-box position="-3 5 0" color="red" dynamic-body click-impulse></a-box>
+        <a-sphere id="sph" position="3 7 0" radius="1" color="red" dynamic-body click-impulse></a-sphere>
 
 
-            <a-box id="ert" position="0 3 -2" color="red" dynamic-body click-impulse></a-box>
-            <a-box position="-3 5 0" color="red" dynamic-body click-impulse></a-box>
-            <a-sphere id="sph" position="3 7 0" radius="1" color="red" dynamic-body click-impulse></a-sphere>
+        <!-- Mouse cursor so we can click on the scene with mouse or touch. --
+    <a-entity id="mouseCursor" cursor="rayOrigin: mouse" raycaster="objects: [gui-interactable]"></a-entity>
+    -->
+        <a-entity id="leftHand" laser-controls="hand: left" raycaster="objects: [gui-interactable]"></a-entity>
+        <a-entity id="rightHand" laser-controls="hand: right" raycaster="objects: [gui-interactable]"></a-entity>
 
+        <!-- Camera + recorder. --
+    <a-entity id="cameraRig" position="0 1.6 0">
+        <a-entity camera camera-recorder="positionTo: -1 1.6 -7; lookAt: -8 5 8" position="5 1.6 0"></a-entity>
+    </a-entity>
 
-            <!-- Mouse cursor so we can click on the scene with mouse or touch. --
-        <a-entity id="mouseCursor" cursor="rayOrigin: mouse" raycaster="objects: [gui-interactable]"></a-entity>
-        -->
-            <a-entity id="leftHand" laser-controls="hand: left" raycaster="objects: [gui-interactable]"></a-entity>
-            <a-entity id="rightHand" laser-controls="hand: right" raycaster="objects: [gui-interactable]"></a-entity>
+    <!-- Camera. -->
+        <a-entity id="cameraWrapper">
+            <a-entity id="camera" camera look-controls wasd-controls orbit-controls="target:0 0 0;initialPosition:5 5 5">
+                <a-entity cursor="fuse: false; rayOrigin: mouse;"></a-entity>
 
-            <!-- Camera + recorder. --
-          <a-entity id="cameraRig" position="0 1.6 0">
-              <a-entity camera camera-recorder="positionTo: -1 1.6 -7; lookAt: -8 5 8" position="5 1.6 0"></a-entity>
-          </a-entity>
-
-          <!-- Camera. -->
-            <a-entity id="cameraWrapper">
-                <a-entity id="camera" camera look-controls wasd-controls orbit-controls="target:0 0 0;initialPosition:5 5 5">
-                    <a-entity cursor="fuse: false; rayOrigin: mouse;"></a-entity>
-
-                </a-entity>
             </a-entity>
+        </a-entity>
     </a-scene>
     <script src="aframe-physics-system.min.js"></script>
     <!--
