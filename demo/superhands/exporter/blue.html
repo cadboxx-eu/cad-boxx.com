@@ -209,12 +209,12 @@
             <a-mixin id="yellow" material="color: yellow"></a-mixin>
 
             <!--
-            <a-mixin id="" geometry="gltf-model: model;" src="#prt1"></a-mixin>
+        <a-mixin id="" geometry="gltf-model: model;" src="#prt1"></a-mixin>
 
-            <a-mixin id="" geometry="gltf-model: model;src:#prt0"></a-mixin>
+        <a-mixin id="" geometry="gltf-model: model;src:#prt0"></a-mixin>
 
-            <a-mixin id="" constraint="type: hinge;axis:0 1 0;targetAxis:0 1 0;pivot:0 0 0;targetPivot:0 0 0"></a-mixin>
-                -->
+        <a-mixin id="" constraint="type: hinge;axis:0 1 0;targetAxis:0 1 0;pivot:0 0 0;targetPivot:0 0 0"></a-mixin>
+            -->
             <a-mixin id="weight1" mass="1.0"></a-mixin>
             <a-mixin id="weight2" mass="2.0"></a-mixin>
             <a-mixin id="weight4" mass="4.0"></a-mixin>
@@ -323,7 +323,30 @@
             </a-entity>
         </a-entity>
 
+        <a-entity id="redbbbx" position="0 0 0" rotation="0 0 0">
+            <a-entity id="botxx" mixin="#cyll" position="0 0 0" rotation="0 0 0" scale="10 10 10" static-body>
 
+            </a-entity>
+            <a-entity id="botyy" mixin="#cyll" position="0 0 0" rotation="0 0 0" scale="10 10 10" static-body>
+
+            </a-entity>
+            <a-entity id="botzz" mixin="#cyll" position="0 0 0" rotation="0 0 0" scale="10 10 10" static-body>
+
+            </a-entity>
+
+
+
+
+            <a-gltf-model id="bert" src="#bb030" position="0 1 0" rotation="0 0 0" scale="1 1 1" static-body>
+
+            </a-gltf-model>
+            <a-gltf-model id="toppyy" class="clickable" src="#cb1" gltf-part-plus model-center="bottomAlign:true" position="0 1 0" rotation="0 0 0" scale="1 1 1"
+                          constraint="type:hinge;target:#bert;axis:0 1 0;targetAxis:0 1 0;pivot:0 0 0;targetPivot:0 1.5 0"
+                          dynamic-body click-impulse>
+
+            </a-gltf-model>
+
+        </a-entity>
 
         <a-entity camera look-controls orbit-controls="target: 0 0 0; minDistance: 0.5; maxDistance: 10; initialPosition: 0 2 7"></a-entity>
 
