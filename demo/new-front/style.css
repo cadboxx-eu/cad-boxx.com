@@ -1,0 +1,397 @@
+body {
+    padding: 0;
+    margin: 0;
+    overflow-x: hidden;
+}
+
+a {
+    text-decoration: none;
+}
+
+*{
+    transition: all 0.3s;
+}
+
+/* header area css*/
+
+.nav {
+    padding: 20px 0;
+    background-color: #fff;
+    transition: all 0.4s ease-in-out;
+}
+
+
+.sticky {
+    position: fixed;
+    width: 100%;
+    left: 0;
+    top: 0;
+    z-index: 9;
+    border-top: 0;
+    background-color: #fff !important;
+    padding: 10px 0px;
+    border-bottom: none;
+    box-shadow: 0 10px 30px -10px rgb(0 64 128 / 20%);
+}
+
+.navbar img.logo-white {
+    width: 150px;
+}
+
+.navbar li.nav-item {
+    padding: 0 12px;
+}
+
+.navbar a.nav-link {
+    color: #212121;
+    font-weight: 500;
+    transition: all 0.2s;
+}
+
+.navbar a.nav-link:hover {
+    color: #00AF80;
+    transition: all 0.2s;
+}
+
+
+.navbar-nav {
+    align-items: center;
+}
+
+a {
+    color: #00AF80;
+}
+
+.start {
+    background-image: url(image/01.jpg)
+}
+
+.button-one {
+    padding: 15px 50px;
+    background: #00AF80;
+    border-radius: 50px;
+    border-color: #00AF80;
+    border: 0;
+    font-weight: 600;
+    color: #fff;
+    border: solid 1px #00AF80;
+}
+
+.button-one:hover {
+    background-color: white;
+    transition: all 0.3s;
+    color: #00AF80;
+    border: solid 1px #00AF80;
+}
+
+.banner-area img {
+    height: 800px;
+}
+
+.amet {
+    color: #00AF80;
+}
+
+.button-two {
+    padding: 15px 50px;
+    background: white;
+    border-radius: 50px;
+    border-color: #00AF80;
+    border: 0;
+    font-weight: 600;
+    color: #00AF80;
+}
+
+.button-two:hover {
+    background-color: #00AF80;
+    transition: all 0.3s;
+    color: #fff;
+}
+
+ 
+
+.siam {
+    color: #00AF80;
+}
+
+.image-one:hover {
+    box-shadow: 0 2rem 3rem rgba(212, 175, 175, 0.70);
+    transition: 0.3s;
+}
+
+.card {
+    padding-bottom: 10px;
+}
+
+.card:hover {
+    box-shadow: 0 2rem 3rem rgba(212, 175, 175, 0.70);
+    transition: 0.3s;
+}
+
+.image-two {
+    height: 800px;
+}
+
+.masum {
+    color: #00AF80;
+}
+
+.milon {
+    background: rgba(54, 52, 52, 0.26) url(image/09.jpg);
+    background-blend-mode: overlay;
+}
+
+.bg-color {
+    background-color: #f9fafc;
+}
+
+.bg-color-two {
+    background: rgba(0, 0, 0, 0.8) url(image/16.jpg);
+    background-size: cover;
+    background-blend-mode: overlay;
+    background-position: top;
+    padding: 100px 0;
+
+}
+
+.button-three {
+    background-color: #00AF80;
+}
+
+.noman {
+    border-radius: 50%;
+    width: 100px;
+}
+
+.raju {
+    color: #00AF80;
+}
+
+.gallery-area img {
+    width: 100%;
+    border-radius:0;
+    cursor: pointer;
+}
+
+.banner-area .carousel-caption {
+    bottom: 10rem;
+
+}
+
+.pranto {
+    background-color: #f4f4f4;
+}
+
+.navbar-brand .shuvo {
+    height: 50px;
+
+}
+
+.navbar-brand .shuvo {
+    height: 50px;
+}
+
+.mukta a {
+    color: black;
+    padding: 5px;
+    border-radius: 6px;
+}
+
+.mukta a:hover {
+    color: #00AF80;
+    transition: 0.3s;
+    padding-left: 10px;
+}
+
+.button-seven {
+    background-color: #00AF80;
+    transition: all 0.4s;
+    padding: 10px 40px;
+}
+
+.icon a {
+    width: 50px;
+    height: 50px;
+    background-color: #00AF80;
+    border-radius: 6px;
+    font-size: 24px;
+    margin: 10px;
+    display: inline-flex;
+    flex-direction: row;
+    -webkit-box-align: center;
+    align-items: center;
+    text-decoration: none;
+    justify-content: center;
+    color: #fff;
+    transition: 0.3s all ease-in-out;
+}
+
+.pranto {
+    background-color: #f4f4f4;
+}
+
+.button-seven:hover {
+    background-color: #00AF80;
+    color: white;
+    border: solid 2px gba(131, 100, 226, 0.67);
+    transition: all 0.4s;
+}
+
+.hasan {
+    background: rgba(0, 0, 0, 0.3);
+}
+
+.hasan:hover {
+
+    transition: all 0.3s;
+}
+
+.new-card {
+    border: none;
+
+}
+
+.new-card:hover {
+    box-shadow: 0 2rem 3rem rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+}
+.py-5 {
+    padding-top: 3rem!important;
+    padding-bottom: 3rem!important;
+}
+.my-5 {
+    margin-top: 3rem!important;
+    margin-bottom: 3rem!important;
+        
+    }
+.c-one{
+    color: #00AF80;
+}
+.c-two{
+    font-size: 16px;
+    line-height: 26px;
+    letter-spacing: 0.05em;
+    color: #555555;
+    margin-top: 10px;
+}
+.contact-area{
+    font-size: 14px;
+    line-height: 22px;
+    text-transform: capitalize;
+    color: #ffffff;
+    opacity: 0.8;
+    height: 75%;
+    width: 100%;
+    background: rgba(33, 30, 30, 0.80) url(image/17.jpg);
+}
+.plan{
+    background-color: #f3f7fa;
+}
+.h-color{
+    color:  #00AF80;
+    width: 200px;
+    border-width: 2px;
+    
+}
+.color-text{
+   color:  #00AF80; 
+}
+.card-four{
+    background-color: white;
+}
+.bg-five{
+    background-image: url(image/23.jpg);
+    
+}
+
+
+
+.go-top.active {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+    opacity: 1;
+    visibility: visible;
+    right: 3%;
+    top: 84%;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+}
+
+.go-top {
+    position: fixed;
+    cursor: pointer;
+    right: 3%;
+    top: 87%;
+    background-color: #00AF80; 
+    box-shadow: 0px 0px 10px rgb(0 0 0 / 31%);
+    z-index: 4;
+    width: 45px;
+    text-align: center;
+    height: 45px;
+    line-height: 42px;
+    border-radius: 8px;
+    -webkit-transform: scale(0);
+    transform: scale(0);
+    visibility: hidden;
+    -webkit-transition: .9s;
+    transition: .9s;
+}
+
+.go-top::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background-color: #00AF80; 
+    opacity: 0;
+    visibility: hidden;
+    -webkit-transition: .5s;
+    transition: .5s;
+}
+
+
+.go-top i {
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    color: #fff;
+    -webkit-transition: .5s;
+    transition: .5s;
+    font-size: 18px;
+}
+
+
+
+@media screen and (max-width: 900px) {
+    .container {
+        overflow-x: hidden;
+    }
+    
+    .navbar button:focus {
+        box-shadow: none;
+        border: 0;
+        outline: 0;
+    }
+    
+    
+    .banner-area .display-1  {
+        font-size: 26px !important;
+    }
+    
+    .banner-area img {
+        height: 600px;
+    }
+    
+    .button-one {
+        min-width: 200px;
+    }
+    
+    
+}

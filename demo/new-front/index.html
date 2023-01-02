@@ -1,1128 +1,617 @@
-﻿<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 
 <head>
-    <!-- Metas -->
     <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
-    <meta name="keywords" content="HTML5 Template Iteck Multi-Purpose themeforest" />
-    <meta name="description" content="Iteck - Multi-Purpose HTML5 Template" />
-    <meta name="author" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Ataur - Solar Energy Landing Page Template</title>
+    <link rel="icon" href="image/fav.png">
+    <link href="bootstrap/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.css" type="text/css" media="screen" />
+<!--    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">-->
 
-    <!-- Title  -->
-    <title>cad-boxx.com</title>
-
-    <!-- Favicon -->
-    <link rel="shortcut icon" href="assets/img/fav.png" title="Favicon" sizes="16x16" />
-
-    <!-- ====== bootstrap icons cdn ====== -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
-
-    <!-- bootstrap 5 -->
-    <link rel="stylesheet" href="assets/css/lib/bootstrap.min.css">
-
-    <!-- ====== font family ====== -->
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
-          rel="stylesheet">
-
-    <link rel="stylesheet" href="assets/css/lib/all.min.css" />
-    <link rel="stylesheet" href="assets/css/lib/animate.css" />
-    <link rel="stylesheet" href="assets/css/lib/jquery.fancybox.css" />
-    <link rel="stylesheet" href="assets/css/lib/lity.css" />
-    <link rel="stylesheet" href="assets/css/lib/swiper.min.css" />
-    <!-- ====== global style ====== -->
-    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-    <!-- ====== start loading page ====== -->
-    <div id="preloader">
-    </div>
-    <!-- ====== end loading page ====== -->
-    <!-- ====== start navbar ====== -->
-    <nav class="navbar navbar-expand-lg navbar-dark style-3 position-absolute w-100">
+
+    <!--   header start -->
+    <nav id="navbar" class="navbar nav navbar-expand-lg">
         <div class="container">
-            <a class="navbar-brand" href="#0" data-scroll-nav="0">
-                <img src="assets/img/logo_ll.png" alt="">
-            </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                    aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
+            <img class="img-fluid w-25" src="image/logo.png" alt="">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class=""> <i class="bi bi-list"></i> </span>
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav m-auto mb-2 mb-lg-0 text-uppercase">
-                    <li class="nav-item">
-                        <a class="nav-link" data-scroll-nav="1">
-                            testimonials
-                        </a>
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item ">
+                        <a class="nav-link scroll h1 fw-bold" aria-current="page" href="#home">HOME</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" data-scroll-nav="2">
-                            services
-                        </a>
+                        <a class="nav-link scroll h1 fw-bold" href="#about">ABOUT </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" data-scroll-nav="3">
-                            about us
-                        </a>
+                        <a class="nav-link scroll h1 fw-bold" href="#service">SERVICES </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" data-scroll-nav="4">
-                            portfolio
-                        </a>
+                        <a class="nav-link scroll h1 fw-bold" href="#news">NEWS</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" data-scroll-nav="5">
-                            pricing
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" data-scroll-nav="6">
-                            team
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" data-scroll-nav="7">
-                            blog
-                        </a>
+                        <a class="nav-link btn-one h1 fw-bold" href="#contact">CONTACT </a>
                     </li>
                 </ul>
-                <div class="nav-side">
-                    <div class="d-flex ps-4">
-                        <a href="#" class="search-icon me-5">
-                            <i class="bi bi-search"></i>
-                        </a>
-                        <div class="dropdown">
-                            <button class="icon-35 dropdown-toggle p-0 border-0 bg-transparent rounded-circle img-cover text-white"
-                                    type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-                                <img src="assets/img/lang.png" alt="">
-                            </button>
-                            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                                <li><a class="dropdown-item" href="#">English</a></li>
-                                <li><a class="dropdown-item" href="#">Arabic</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
             </div>
         </div>
     </nav>
-    <!-- ====== end navbar ====== -->
-    <!-- ====== start header ====== -->
-    <header class="style-3 overflow-hidden" data-scroll-index="0">
-        <div class="container">
-            <div class="content section-padding">
-                <div class="row">
-                    <div class="col-lg-5">
-                        <div class="info">
-                            <h1 class="h1">Make your life easier with help from <span>Iteck</span></h1>
-                            <p class="p">
-                                We help businesses elevate their value through custom software development,
-                                product design, QA & consultancy services.
-                            </p>
-                            <h5 class="h5">
-                                Get Free Quote! <span class="fw-normal ms-1">We’ll contact back in 24h</span>
-                            </h5>
-                            <form action="contact.php" class="form mt-30" method="post">
-                                <div class="row gx-3">
-                                    <div class="col-6">
-                                        <div class="form-group input-with-icon">
-                                            <input type="text" class="form-control" placeholder="Your Email *">
-                                            <span class="input-icon">
-                                                <i class="far fa-envelope"></i>
-                                            </span>
-                                        </div>
-                                    </div>
-                                    <div class="col-6">
-                                        <div class="form-group">
-                                            <select class="form-select">
-                                                <option value="" selected>Your inquiry about</option>
-                                                <option value="">Your inquiry about</option>
-                                                <option value="">Your inquiry about</option>
-                                            </select>
-                                        </div>
-                                    </div>
-                                    <div class="col-12">
-                                        <button class="btn dark-butn hover-darkBlue rounded-pill w-100 mt-3">
-                                            <span>Request A Consultation</span>
-                                        </button>
-                                    </div>
-                                </div>
-                            </form>
-                        </div>
+    <!--   header end -->
+    <!--    banner area start -->
+    <div class="banner-area" id="home">
+        <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="false">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="image/01.jpg" class="d-block w-100" alt="...">
+                    <div class="carousel-caption my-auto  pb-5">
+                        <p class=" fw-bold my-2 py-2 amet text-uppercase" data-aos="zoom-in-left" >Technology at its´ best.</p>
+                        <h1 class="mt-3  mb-3 display-1 fw-bold" data-aos="zoom-in-right" >Engineering applied with code.</h1> 
+                        <button class="button-one mt-5 me-0 me-sm-5" data-aos="zoom-out-up" >Get Start</button>
+                        <button class="button-two mt-5" data-aos="zoom-out-up" >Get Involved</button>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="image/02.jpg" class="d-block w-100" alt="...">
+                    <div class="carousel-caption" data-aos="fade-up" data-aos-duration="3000">
+                        <p class=" fw-bold my-2 py-2 text-uppercase">We Provide Energy</p>
+                        <h1 class="mt-3 amet text-capitalize display-1 fw-bold">Born For The Present Making The Future </h1>
+                        <button class="button-one mt-5 me-0 me-sm-5">Get Start</button>
+                        <button class="button-two mt-5">Get Involved</button>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="image/03.jpg" class="d-block w-100" alt="...">
+                    <div class="carousel-caption " data-aos="fade-up" data-aos-duration="3000">
+                        <p class=" fw-bold my-2 py-2 text-uppercase">THE REAL DEAL</p>
+                        <h1 class="mt-3 amet display-1 fw-bold">Making The Difference To Every Life We Touch</h1>
+                        <button class="button-one mt-5 me-0 me-sm-5">Get Start</button>
+                        <button class="button-two mt-5">Get Involved</button>
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="main-img">
-            <img src="assets/img/header/header_3.png" alt="" class="pattern">
-            <img src="assets/img/header/header_3_c.png" alt="" class="circle">
-            <img src="assets/img/header/logo_sh_l.png" alt="" class="logo_shap">
-        </div>
-    </header>
-    <!-- ====== end header ====== -->
-    <!--Contents-->
-    <main>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
 
-        <!-- ====== start testimonials ====== -->
-        <section class="testimonials style-3" data-scroll-index="1">
-            <div class="container">
-                <div class="content section-padding">
-                    <div class="section-head style-3">
-                        <h3>Loved By Thousand <span>Clients</span></h3>
-                    </div>
-                    <div class="testimonial-slider style-3">
-                        <div class="swiper-container">
-                            <div class="swiper-wrapper">
-                                <div class="swiper-slide">
-                                    <div class="testimonial-card style-3">
-                                        <div class="text">
-                                            “We encountered a problem with processing big data and after only 1 week,
-                                            all fixed, professional, fast & affordable price!”
-                                        </div>
-                                        <div class="user-img mt-30 d-flex align-items-center">
-                                            <div class="img icon-40 img-cover rounded-circle overflow-hidden me-3">
-                                                <img src="assets/img/testimonials/testi.jpeg" alt="">
-                                            </div>
-                                            <div class="inf">
-                                                <p class="fw-bold">Robert Downey Jr</p>
-                                                <small class="text-muted">Technical Leader at Airbnb</small>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="swiper-slide">
-                                    <div class="testimonial-card style-3">
-                                        <div class="text">
-                                            “Iteck is 1st our choice for cloud service methods. Extremely security and
-                                            fast support.”
-                                        </div>
-                                        <div class="user-img mt-30 d-flex align-items-center">
-                                            <div class="img icon-40 img-cover rounded-circle overflow-hidden me-3">
-                                                <img src="assets/img/testimonials/user1.jpeg" alt="">
-                                            </div>
-                                            <div class="inf">
-                                                <p class="fw-bold">Conor McGregor</p>
-                                                <small class="text-muted">CTO at IBM</small>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="swiper-slide">
-                                    <div class="testimonial-card style-3">
-                                        <div class="text">
-                                            “Iteck’s Experts really is amazing! high speciality, professional and
-                                            friendly. Our profit increased so much. Really very satisfied!
-                                        </div>
-                                        <div class="user-img mt-30 d-flex align-items-center">
-                                            <div class="img icon-40 img-cover rounded-circle overflow-hidden me-3">
-                                                <img src="assets/img/testimonials/user2.jpeg" alt="">
-                                            </div>
-                                            <div class="inf">
-                                                <p class="fw-bold">Lucas Digne</p>
-                                                <small class="text-muted">Product Management at Invisionapp</small>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="swiper-button-next"></div>
-                        <div class="swiper-button-prev"></div>
-                    </div>
-                </div>
-                <img src="assets/img/testimonials/testi3_lines.png" alt="" class="testi_lines w-100">
+        </div>
+    </div>
+    <!--    banner area end -->
+    <!--  about area start -->
+    <div class="container my-5 py-5" id="about">
+        <div class="row">
+            <div class="col-lg-12">
+                <h1 class="siam text-center mb-5 pb-5 display-4 fw-bold">We Provide Energy</h1>
             </div>
-        </section>
-        <!-- ====== end testimonials ====== -->
-        <!-- ====== start services ====== -->
-        <section class="services style-3 section-padding pb-70" data-scroll-index="2">
-            <div class="container">
-                <div class="section-head style-3 d-flex align-items-center">
-                    <h3>Our Main <span>Services</span></h3> <a href="page-services-5.html" class="text-muted ms-5 ps-5 mt-2">
-                        See full
-                        services <i class="bi bi-chevron-right ms-1"></i>
-                    </a>
+            <div class="col-lg-6 my-auto">
+                <div class="emon"  >
+                    <h1>Use Natural Resources Integrated Services </h1>
+                    <p class="mt-5 lh-lg">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit asperiores veniam illum optio, porro quibusdam, labore velit repellendus molestias accusantium? Dolor est consectetur neque officia illum dolore, ut accusantium autem commodi et, recusandae officiis repudiandae in molestiae nulla libero excepturi consequuntur sed placeat vero, dolorum laborum dolores maiores. Tempore, doloribus?</p>
+                    <button class="button-one mt-5">HOW WE GENERATE</button>
                 </div>
-                <div class="row">
-                    <div class="col-lg-3 mb-30 mb-lg-0">
-                        <div class="service-card style-3">
-                            <div class="icon">
-                                <img src="assets/img/icons/serv_icons/10.png" alt="">
-                            </div>
-                            <div class="info">
-                                <h5 class="title">IT Consultation</h5>
-                                <div class="text">
-                                    We provide best IT solutions for any type of business as stragegy, management.
-                                </div>
-                                <a href="page-portfolio-5.html">
-                                    <span>see projects</span> <i class="bi bi-chevron-right ms-1"></i>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 mb-30 mb-lg-0">
-                        <div class="service-card style-3">
-                            <div class="icon">
-                                <img src="assets/img/icons/serv_icons/11.png" alt="">
-                            </div>
-                            <div class="info">
-                                <h5 class="title">Software Development</h5>
-                                <div class="text">
-                                    We bring methods for design and development as website, mobile app, etc
-                                </div>
-                                <a href="page-portfolio-5.html">
-                                    <span>see projects</span> <i class="bi bi-chevron-right ms-1"></i>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 mb-30 mb-lg-0">
-                        <div class="service-card style-3">
-                            <div class="icon">
-                                <img src="assets/img/icons/serv_icons/12.png" alt="">
-                            </div>
-                            <div class="info">
-                                <h5 class="title">Data Security</h5>
-                                <div class="text">
-                                    Analys & Management Big Data alway big issue of companies management.
-                                </div>
-                                <a href="page-portfolio-5.html">
-                                    <span>see projects</span> <i class="bi bi-chevron-right ms-1"></i>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 mb-30 mb-lg-0">
-                        <div class="service-card style-3">
-                            <div class="icon">
-                                <img src="assets/img/icons/serv_icons/13.png" alt="">
-                            </div>
-                            <div class="info">
-                                <h5 class="title">AI Machine Learning</h5>
-                                <div class="text">
-                                    Turn AI & Machine Learning in the life. Enhance the quality and the effeciency
-                                </div>
-                                <a href="page-portfolio-5.html">
-                                    <span>see projects</span> <i class="bi bi-chevron-right ms-1"></i>
-                                </a>
-                            </div>
-                        </div>
+            </div>
+            <div class="col-lg-6 mt-5 mt-sm-0">
+                <div class="rifat"   >
+                    <img class=" img-fluid image-one" src="image/04.jpg" alt="">
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <!--  about area end -->
+    <!--  service area start -->
+    <div class="container my-5 py-5" id="service">
+        <div class="row">
+            <div class="col-lg-12 mb-5">
+                <div class="masum text-center">
+                    <h1 class="fw-bold text-center mb-4">Our Services</h1>
+                    <h5>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex, expedita.</h5>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="card-one new-card " style="">
+                    <div class="card-body  text-center shadow my-5 py-5" data-aos="fade-down-right">
+                        <h2 class="card-title">Customizable</h2>
+                        <p class="card-text mt-4 mb-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel, numquam. Laborum, sunt tenetur mollitia iure.</p>
+                        <a href="#" class="btn button-one">Go somewhere</a>
                     </div>
                 </div>
             </div>
-        </section>
-        <!-- ====== end services ====== -->
-        <!-- ====== start about us ====== -->
-        <section class="about section-padding style-3" data-scroll-index="3">
-            <div class="top-content">
-                <div class="img img-left">
-                    <img src="assets/img/about/style_3_1.png" alt="">
-                    <div class="info-circle">
-                        <div class="cont">
-                            <h2>1,2k</h2>
-                            <small>Projects done</small>
-                        </div>
+            <div class="col-lg-4">
+                <div class="card-one new-card " style="">
+                    <div class="card-body  text-center shadow my-5 py-5" >
+                        <h2 class="card-title">Repair Services</h2>
+                        <p class="card-text mt-4 mb-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel, numquam. Laborum, sunt tenetur mollitia iure.</p>
+                        <a href="#" class="btn button-one">Go somewhere</a>
                     </div>
-                    <div class="info-circle">
-                        <div class="cont">
-                            <h2>165</h2>
-                            <small>satisfied clients</small>
-                        </div>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="card-one new-card " style="">
+                    <div class="card-body  text-center shadow my-5 py-5" >
+                        <h2 class="card-title">Typography</h2>
+                        <p class="card-text mt-4 mb-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel, numquam. Laborum, sunt tenetur mollitia iure.</p>
+                        <a href="#" class="btn button-one">Go somewhere</a>
                     </div>
-                    <div class="info-circle">
-                        <div class="cont">
-                            <h2>26</h2>
-                            <small>awards winner</small>
-                        </div>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="card-one new-card " style="">
+                    <div class="card-body  text-center shadow my-5 py-5" data-aos="fade-down-right">
+                        <h2 class="card-title">Solar Maintenance</h2>
+                        <p class="card-text mt-4 mb-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel, numquam. Laborum, sunt tenetur mollitia iure.</p>
+                        <a href="#" class="btn button-one">Go somewhere</a>
                     </div>
-                    <div class="info-circle">
-                        <div class="cont">
-                            <h2>15</h2>
-                            <small>years of experience</small>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="card-one new-card " style="">
+                    <div class="card-body  text-center shadow my-5 py-5" data-aos="fade-up">
+                        <h2 class="card-title">Elementer</h2>
+                        <p class="card-text mt-4 mb-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel, numquam. Laborum, sunt tenetur mollitia iure.</p>
+                        <a href="#" class="btn button-one">Go somewhere</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="card-one new-card " style="">
+                    <div class="card-body  text-center shadow my-5 py-5" >
+                        <h2 class="card-title">Wind Turbines</h2>
+                        <p class="card-text mt-4 mb-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel, numquam. Laborum, sunt tenetur mollitia iure.</p>
+                        <a href="#" class="btn button-one">Go somewhere</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--  service area end -->
+    <!--        gallery area start  -->
+    <div class="container py-5 mb-5 gallery-area" id="fleet">
+        <div class="row">
+            <div class="col-md-12 mb-5 text-center">
+                <p class="h1"> OUR GALLERY </p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-3 my-3" data-aos="fade-down-right" >
+                <a data-fancybox="gallery" data-src="image/10.jpg">
+                    <img alt="" src="image/10.jpg" />
+                </a>
+            </div>
+            <div class="col-md-3 my-3" >
+                <a data-fancybox="gallery" data-src="image/12.jpg">
+                    <img alt="" src="image/12.jpg" />
+                </a>
+            </div>
+            <div class="col-md-3 my-3" >
+                <a data-fancybox="gallery" data-src="image/13.jpg">
+                    <img alt="" src="image/13.jpg" />
+                </a>
+            </div>
+            <div class="col-md-3 my-3"  >
+                <a data-fancybox="gallery" data-src="image/14.jpg">
+                    <img alt="" src="image/14.jpg" />
+                </a>
+            </div>
+            <div class="col-md-3 my-3" data-aos="fade-up-right" >
+                <a data-fancybox="gallery" data-src="image/15.jpg">
+                    <img alt="" src="image/15.jpg" />
+                </a>
+            </div>
+            <div class="col-md-3 my-3" data-aos="fade-up" >
+                <a data-fancybox="gallery" data-src="image/07.jpg">
+                    <img alt="" src="image/07.jpg" />
+                </a>
+            </div>
+            <div class="col-md-3 my-3" data-aos="fade-up" >
+                <a data-fancybox="gallery" data-src="image/05.jpg">
+                    <img alt="" src="image/05.jpg" />
+                </a>
+            </div>
+            <div class="col-md-3 my-3" data-aos="fade-up-left" >
+                <a data-fancybox="gallery" data-src="image/08.jpg">
+                    <img alt="" src="image/08.jpg" />
+                </a>
+            </div>
+        </div>
+    </div>
+    <!--        gallery area  end -->
+    <!--  counter area start -->
+    <div class="bg-color-two my-5 py-5">
+        <div class="container  ">
+            <div class="row g-4 my-3 py-3 text-white">
+
+                <div class="col-lg-3">
+                    <div class=" text-center ">
+                        <h1 class="counter">450</h1>
+                        <p>Project Completed</p>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class=" text-center">
+                        <h1 class="counter">940</h1>
+                        <p>Expert Consultants</p>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class=" text-center">
+                        <h1 class="counter">365</h1>
+                        <p>Happy Clients</p>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class=" text-center">
+                        <h1 class="counter">235</h1>
+                        <p>5 Stars Rating</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--  counter area end -->
+    <!--  section area start -->
+    <div class="milon my-5 py-5">
+        <div class="container" id="news">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="liton">
+                        <h1 class="text-center display-5 fw-bold text-white">Recent News</h1>
+                        <p class="text-center mt-4 text-white">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus vel, doloribus magnam eos reprehenderit nulla hic. Fuga soluta molestiae inventore!</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row my-5 py-5 g-4">
+                <div class="col-lg-4">
+                    <div class="card rounded-0 border-0"  >
+                        <img src="image/05.jpg" class="card-img-top mahedi rounded-0 border-0" alt="...">
+                        <div class="card-body">
+                            <p class="mt-2">July 21, 2022</p>
+                            <h3 class="card-title fw-bold">The Most Unusual Uses Of Artifi- cial Intelligence.</h3>
+                            <p class="card-text mt-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad, impedit!Lorem ipsum dolor sit amet, consectetur adipisicing elit. A minus facilis vitae, vero minima iure?</p>
                         </div>
                     </div>
                 </div>
-                <div class="container">
-                    <div class="row gx-0 justify-content-end">
-                        <div class="col-lg-5">
-                            <div class="info">
-                                <div class="section-head long-shape mb-40 style-3">
-                                    <h3>Iteck’s <span>Mission & Vision</span></h3>
-                                </div>
-                                <h5 class="h5">
-                                    “It is only when they go wrong that machines remind you how powerful they are.”
-                                </h5>
-                                <div class="text mb-20">
-                                    Iteck Co is the partner of choice for many of the world’s leading enterprises, SMEs
-                                    and technology challengers. We help businesses elevate their value through custom
-                                    software development, product design, QA and consultancy services.
-                                </div>
-                                <div class="text mb-70">
-                                    Iteck specializes in technological and IT-related services such as product
-                                    engineering, warranty management, building cloud, etc.
-                                </div>
-                                <a href="page-about-5.html" class="btn rounded-pill bg-blue2 sm-butn text-white">
-                                    <span>More About Us</span>
-                                </a>
-                            </div>
+                <div class="col-lg-4">
+                    <div class="card rounded-0 border-0" data-aos="flip-up">
+                        <img src="image/06.jpg" class="card-img-top mahedi rounded-0 border-0" alt="...">
+                        <div class="card-body">
+                            <p class="mt-2">July 21, 2022</p>
+                            <h3 class="card-title fw-bold">Highly Promotion and Secure Energetic</h3>
+                            <p class="card-text mt-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus, possimus.Lorem ipsum dolor sit amet, consectetur adipisicing elit. A minus facilis vitae, vero minima iure?</p>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="card rounded-0 border-0" data-aos="fade-left" >
+                        <img src="image/07.jpg" class="card-img-top mahedi rounded-0 border-0" alt="...">
+                        <div class="card-body ">
+                            <p class="mt-2">July 21, 2022</p>
+                            <h3 class="card-title fw-bold">Smart grid technology innovation </h3>
+                            <p class="card-text mt-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus, possimus.Lorem ipsum dolor sit amet, consectetur adipisicing elit. A minus facilis vitae, vero minima iure?</p>
+
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="btm-content">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-lg-5">
-                            <div class="info pe-lg-5">
-                                <div class="section-head mb-40 style-3">
-                                    <h3>Iteck’s <span>Technology</span></h3>
-                                </div>
-                                <div class="text mb-30">
-                                    Our team can assist you in transforming your business through latest tech
-                                    capabilities to stay ahead of the curve.
-                                </div>
-                                <ul>
-                                    <li>
-                                        <i class="bi bi-star-fill me-3"></i> Latest IT Solutions & Integration With
-                                        Blockchain
-                                    </li>
-                                    <li> <i class="bi bi-star-fill me-3"></i> Over 100+ Payment Gateways Support</li>
-                                    <li> <i class="bi bi-star-fill me-3"></i> AI Machine & Deep Learning</li>
-                                    <li> <i class="bi bi-star-fill me-3"></i> Dedicated Support 24/7</li>
-                                </ul>
-                                <a href="page-about-5.html" class="btn rounded-pill border-blue2 hover-blue2 mt-60 sm-butn">
-                                    <span>How We Works</span>
-                                </a>
-                            </div>
-                        </div>
+        </div>
+    </div>
+    <!--  section area end -->
+    <!--  price area start -->
+    <div class="plan my-5 py-5">
+        <div class="container ">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="price text-center">
+                        <p>PRICING & PLAN</p>
+                        <h1 class="color-text">Flexible & Transparent Pricing</h1>
+                        <hr class="h-color mt-4 mx-auto">
                     </div>
                 </div>
-                <div class="img img-right">
-                    <img src="assets/img/about/style_3_2.png" alt="">
+                <div class="col-lg-4 my-3 py-3 ">
+                    <div class="card-four shadow text-center my-0 my-sm-5 py-5"   >
+                        <h3 class="fw-bold mb-3">Residential</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum, rem. ipsum dolor sit amet.</p>
+                        <p><sup class="h3">$</sup><span class="h1">5.25</span>/ Watt</p>
+                        <button class="button-one mb-4">Get Start</button>
+                        <h5>Stylizing</h5>
+                        <hr class="h-color mx-auto">
+                        <h5>Premium</h5>
+                        <hr class="h-color mx-auto">
+                        <h5>Installation</h5>
+                        <hr class="h-color mx-auto">
+                        <h5>Replacement</h5>
+                    </div>
+                </div>
+                <div class="col-lg-4 my-3 py-3">
+                    <div class="card-four shadow text-center my-0 my-sm-5 py-5"   >
+                        <h3 class="fw-bold mb-3">Future Solar</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum, rem. ipsum dolor sit amet.</p>
+                        <p><sup class="h3">$</sup><span class="h1">4.75</span>/ Watt</p>
+                        <button class="button-one mb-4">Get Start</button>
+                        <h5>Stylizing</h5>
+                        <hr class="h-color mx-auto">
+                        <h5>Premium</h5>
+                        <hr class="h-color mx-auto">
+                        <h5>Installation</h5>
+                        <hr class="h-color mx-auto">
+                        <h5>Replacement</h5>
+                    </div>
+                </div>
+                <div class="col-lg-4 my-3 py-3">
+                    <div class="card-four shadow text-center my-0 my-sm-5 py-5"   >
+                        <h3 class="fw-bold mb-3">Energy Solutions</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum, rem. ipsum dolor sit amet.</p>
+                        <p><sup class="h3">$</sup><span class="h1">3.25</span>/ Watt</p>
+                        <button class="button-one mb-4">Get Start</button>
+                        <h5>Stylizing</h5>
+                        <hr class="h-color mx-auto">
+                        <h5>Premium</h5>
+                        <hr class="h-color mx-auto">
+                        <h5>Installation</h5>
+                        <hr class="h-color mx-auto">
+                        <h5>Replacement</h5>
+                    </div>
                 </div>
             </div>
-        </section>
-        <!-- ====== end about us ====== -->
-        <!-- ====== start projects  ====== -->
-        <section class="projects section-padding style-3" data-scroll-index="4">
-            <div class="container">
-                <div class="section-head style-3 text-center">
-                    <h3>Our Featured <span>Projects</span></h3>
+        </div>
+    </div>
+    <!--  price area end -->
+    <!--  customer area start -->
+    <div class="bg-five">
+        <div class="container my-5 py-5">
+            <div class="row">
+                <div class="col-lg-12 ">
+                    <div class="customer text-center">
+                        <h1 class="fw-bold raju mb-5">Customers Of Our Solar Panels</h1>
+
+                    </div>
                 </div>
-                <div class="content">
-                    <div class="row">
-                        <div class="col-lg-7">
-                            <div class="project-card d-block mb-30 style-3">
-                                <a href="page-single-project-5.html" class="img img-cover d-block">
-                                    <img src="assets/img/projects/3.png" alt="">
-                                </a>
-                                <div class="info">
-                                    <h5 class="h5"><a href="page-single-project-5.html">Catty Boxes NFT Blockchain</a></h5>
-                                    <small class="small"><a href="#">Game Development</a></small>
+            </div>
+            <div class="row">
+                <div class="col-lg-9 mx-auto text-white">
+                    <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner mt-5">
+                            <div class="carousel-item active text-center">
+                                <img class="img-fluid noman " src="image/18.jpg" alt="">
+                                <h4 class="mt-4 fw-bold">Mr. john</h4>
+                              
+                                <p class=" mt-3">Lorem ipsum dolor sit amet, consectetur Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae, dignissimos!adipisicing elit. Tempora, hic sequi, veniam necessitatibus reiciendis magni maxime unde dicta. Et, placeat.</p>
+                            </div>
+                            <div class="carousel-item text-center">
+                                <img class="img-fluid noman " src="image/19.jpg" alt="">
+                                <h4 class="mt-4 fw-bold">Mr. Harry </h4>
+                              
+                                <p class=" mt-3">Lorem ipsum dolor sit amet, consectetur Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae, dignissimos!adipisicing elit. Tempora, hic sequi, veniam necessitatibus reiciendis magni maxime unde dicta. Et, placeat.</p>
+                            </div>
+                            <div class="carousel-item text-center">
+                                <img class="img-fluid noman " src="image/20.jpg" alt="">
+                                <h4 class="mt-4 fw-bold">Mr. Watson</h4>
+                              
+                                <p class=" mt-3">Lorem ipsum dolor sit amet, consectetur Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae, dignissimos!adipisicing elit. Tempora, hic sequi, veniam necessitatibus reiciendis magni maxime unde dicta. Et, placeat.</p>
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--  customer area end -->
+    
+    <!--  contact area end -->
+    <div class="container py-5 mt-5 mb-0 mb-sm-5" id="contact">
+        <div class="row">
+            <div class="col-lg-7 my-auto">
+                <div class="pe-2 pe-sm-5 mb-5 mb-sm-0">
+                    <p class="h5 c-one mb-3">CONTACT US</p>
+                    <p class="h1 text-color fw-bold">GET IN TOUCH </p>
+                    <p class="mt-3 c-two">Desire that they cannot foresee the pain and trouble that are bound
+                        equal blame belongs to their duty.</p>
+                    <form class="contact-form wow fadeInLeft" id="reused_form" action="POST">
+                        <div class="row my-form">
+                            <div class="col-lg-12">
+                                <div class="form-floating mt-4">
+                                    <input name="name" id="name" type="text" class="form-control" placeholder="Your Name*" required="">
+                                    <label for="name">Your Name</label>
+                                </div>
+                            </div>
+                            <div class="col-lg-12">
+                                <div class="form-floating mt-4">
+                                    <input name="email" id="email" type="email" class="form-control" placeholder="Your Email*" required="">
+                                    <label for="email">Email address</label>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-lg-5">
-                            <div class="project-card d-block mb-30 style-3">
-                                <a href="page-single-project-5.html" class="img img-cover d-block">
-                                    <img src="assets/img/projects/4.png" alt="">
-                                </a>
-                                <div class="info">
-                                    <h5 class="h5"><a href="page-single-project-5.html">Catty Boxes NFT Blockchain</a></h5>
-                                    <small class="small"><a href="#">Game Development</a></small>
+                        <div class="row my-form">
+                            <div class="col-lg-12">
+                                <div class="form-floating mt-4">
+                                    <input type="text" class="form-control" name="subject" id="subject" placeholder="Your Subject.." required="">
+                                    <label for="subject">Your Subject</label>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-lg-6">
-                            <div class="project-card d-block style-3 mb-30 mb-lg-0">
-                                <a href="page-single-project-5.html" class="img img-cover d-block">
-                                    <img src="assets/img/projects/5.png" alt="">
-                                </a>
-                                <div class="info">
-                                    <h5 class="h5"><a href="page-single-project-5.html">Catty Boxes NFT Blockchain</a></h5>
-                                    <small class="small"><a href="#">Game Development</a></small>
+                        <div class="row my-form">
+                            <div class="col-lg-12">
+                                <div class="form-floating mt-4">
+                                    <textarea style="height: 150px" name="comments" id="comments" cols="20" rows="50" class="form-control" placeholder="Your message..."></textarea>
+                                    <label for="comments">Your message</label>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-lg-6">
-                            <div class="project-card d-block style-3">
-                                <a href="page-single-project-5.html" class="img img-cover d-block">
-                                    <img src="assets/img/projects/6.png" alt="">
-                                </a>
-                                <div class="info">
-                                    <h5 class="h5"><a href="page-single-project-5.html">Catty Boxes NFT Blockchain</a></h5>
-                                    <small class="small"><a href="#">Game Development</a></small>
-                                </div>
+                        <div class="row mt-5">
+                            <div class="col-lg-12 text-center">
+                                <button type="submit" class="btn button-one">
+                                    Send message</button>
                             </div>
+                        </div>
+                    </form>
+
+                    <div class="pt-5 mt-5" id="success_message" style="display:none; ">
+                        <h3 class="text-success">Your message submit successfully!</h3>
+                    </div>
+                    <div id="error_message" style="display:none; ">
+                        <h3 class="text-danger">Error</h3> Sorry there was an error sending your form.
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-5">
+                <div class=" contact-area my-5 py-5" >
+                    <h5 class="ms-5 fw-bold">OUR LOCATION</h5>
+                    <div class="d-flex ms-5 mt-3">
+                        <div class="flex-shrink-0">
+                            <i class="bi bi-geo-alt-fill"></i>
+                        </div>
+                        <div class="flex-grow-1 ms-3">
+                            <p> Sydney, 3000</p>
+                            <p class="mb-5"> Australia</p>
                         </div>
                     </div>
-                    <div class="text-center">
-                        <a href="page-portfolio-5.html" class="btn rounded-pill bg-blue2 sm-butn mt-60 text-white">
-                            <span>See All Projects</span>
+                    <h5 class="ms-5 fw-bold">QUICK CONTACT</h5>
+                    <div class="d-flex ms-5 mt-3">
+                        <div class="flex-shrink-0">
+                            <i class="bi bi-envelope-fill"></i>
+                        </div>
+                        <div class="flex-grow-1 ms-3">
+                            <p> eample.com</p>
+                        </div>
+                    </div>
+                    <div class="d-flex ms-5 ">
+                        <div class="flex-shrink-0">
+                            <i class="bi bi-telephone-fill"></i>
+                        </div>
+                        <div class="flex-grow-1 ms-3">
+                            <p> +68 4 2375 6783</p>
+                        </div>
+                    </div>
+                    <h5 class="ms-5 fw-bold mt-4">OPENING HOURS</h5>
+                    <div class="d-flex ms-5 mt-3">
+                        <div class="flex-grow-1 ">
+                            <p> From Saturday - Thursday</p>
+                            <p>9:00 AM - 5:00 PM</p>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+ 
+    <!--  contact area end -->
+    <!--    footer start -->
+    <div class="pranto ">
+        <div class="container my-0 my-sm-5 py-5 ">
+            <div class="row">
+                <div class="col-lg-4">
+                    <div class="fuga">
+                        <a class="navbar-brand pe-5" href="#">
+                            <img class="shuvo" src="image/logo.png" alt="">
+
+                        </a>
+                        <p class="h3 mt-5  fw-bold">ABOUT</p>
+                        <p class=" me-5 mt-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil, temporibus deleniti velit dolorem iusto? Eos!</p>
+
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <h5 class="">Quick Links</h5>
+                    <ul class="list-unstyled mukta pt-3 lh-lg ">
+                        <li><a href="#"> <i class="bi bi-arrow-right-short"></i> Home</a></li>
+                        <li><a href="#"> <i class="bi bi-arrow-right-short"></i> Features</a></li>
+                        <li><a href="#"> <i class="bi bi-arrow-right-short"></i> Examples</a></li>
+                        <li><a href="#"> <i class="bi bi-arrow-right-short"></i> Pricing</a></li>
+                        <li><a href="#"> <i class="bi bi-arrow-right-short"></i> Get Start</a></li>
+
+                    </ul>
+                </div>
+
+                <div class="col-lg-5">
+                    <h5 class="">Contact Info</h5>
+                    <ul class="list-unstyled mukta pt-3 lh-lg ">
+                        <li><a href="#"> <i class="bi bi-arrow-right-short"></i> Sydney, 3000</a></li>
+                        <li><a href="#"> <i class="bi bi-arrow-right-short"></i> Australia</a></li>
+                        <li><a href="#"> <i class="bi bi-arrow-right-short"></i> example.com</a></li>
+                        <li><a href="#"> <i class="bi bi-arrow-right-short"></i> +68 4 2375 6783</a></li>
+
+                    </ul>
+                </div>
+            </div>
+            <div class="row">
+                <div class="collg-4">
+                    <div class="icon">
+                        <a class="ms-0" href="#">
+                            <i class="bi bi-twitter"></i>
+                        </a>
+                        <a href="#">
+                            <i class="bi bi-instagram"></i>
+                        </a>
+                        <a href="#">
+                            <i class="bi bi-discord"></i>
+                        </a>
+                        <a href="#">
+                            <i class="bi bi-reddit"></i>
+                        </a>
+                        <a href="#">
+                            <i class="bi bi-youtube"></i>
                         </a>
                     </div>
                 </div>
             </div>
-        </section>
 
-        <!-- ====== end projects  ====== -->
-        <!-- ====== start pricing ====== -->
-        <section class="pricing style-3" data-scroll-index="5">
-            <div class="container">
-                <div class="content section-padding">
-                    <div class="row">
-                        <div class="col-lg-4">
-                            <div class="info">
-                                <div class="section-head style-3 mb-40">
-                                    <h3> Affordable <span> Price </span></h3>
-                                </div>
-                                <small class="text text-gray mb-30">
-                                    Kick-start your project with our pricing plan. We handle all the practical aspects
-                                    related to hiring and hosting your team at our premises, thus saving you half a cost
-                                    and a lot of efforts. Lorem ispum dolor sit amet
-                                </small>
-                                <small class="text text-gray d-block">
-                                    Not find your plan, need a tailored-plan? <br> <a href="#"
-                                                                                      class="color-blue2 text-decoration-underline">Contact</a> us now!
-                                </small>
-                                <a href="page-services-5.html" class="btn rounded-pill border-blue2 hover-blue2 mt-60 sm-butn">
-                                    <span>Our Services</span>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="col-lg-7 offset-lg-1">
-                            <div class="price-cards">
-                                <div class="row">
-                                    <div class="col-lg-6">
-                                        <div class="pricing-card style-3 mb-30 mb-lg-0">
-                                            <div class="card-head">
-                                                <div class="title">
-                                                    <h4>Standard</h4>
-                                                    <small>Basic features</small>
-                                                </div>
-                                                <div class="price">
-                                                    <h5>$29</h5>
-                                                    <small>per month</small>
-                                                </div>
-                                            </div>
-                                            <div class="card-body">
-                                                <ul>
-                                                    <li>
-                                                        <i class="bi bi-check"></i>
-                                                        <small>3 Projects</small>
-                                                    </li>
-                                                    <li>
-                                                        <i class="bi bi-check"></i>
-                                                        <small>6 Months Support & SEO</small>
-                                                    </li>
-                                                    <li>
-                                                        <i class="bi bi-check"></i>
-                                                        <small>Basic Dashboard</small>
-                                                    </li>
-                                                </ul>
-                                            </div>
-                                            <a href="page-contact-5.html" class="btn rounded-pill bg-blue2 sm-butn w-100 text-white">
-                                                <span>Get Started Now</span>
-                                            </a>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-6">
-                                        <div class="pricing-card dark-card style-3">
-                                            <div class="card-head">
-                                                <div class="title">
-                                                    <h4>Pro <small>Recommended</small></h4>
-                                                    <small>Premium features</small>
-                                                </div>
-                                                <div class="price">
-                                                    <h5>$59</h5>
-                                                    <small>per month</small>
-                                                </div>
-                                            </div>
-                                            <div class="card-body">
-                                                <ul>
-                                                    <li>
-                                                        <i class="bi bi-check"></i>
-                                                        <small>Unlimited Projects</small>
-                                                    </li>
-                                                    <li>
-                                                        <i class="bi bi-check"></i>
-                                                        <small>Lifetime Support & SEO Experts Consult</small>
-                                                    </li>
-                                                    <li>
-                                                        <i class="bi bi-check"></i>
-                                                        <small>Advance Dashboard</small>
-                                                    </li>
-                                                    <li>
-                                                        <i class="bi bi-check"></i>
-                                                        <small>Data Security & Backup</small>
-                                                    </li>
-                                                    <li>
-                                                        <i class="bi bi-check"></i>
-                                                        <small>Cloud Hosting & Domain</small>
-                                                    </li>
-                                                </ul>
-                                            </div>
-                                            <a href="page-contact-5.html" class="btn rounded-pill bg-blue2 sm-butn w-100 text-white">
-                                                <span>Get Started Now</span>
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <img src="assets/img/testimonials/testi3_lines.png" alt="" class="testi_lines w-100">
+        </div>
+        <hr class="my-5">
+
+        <div class="container ">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <p>Copyright © 2022 Ataur</p>
                 </div>
-            </div>
-        </section>
-        <!-- ====== end pricing ====== -->
-        <!-- ====== start team ====== -->
-        <section class="team section-padding style-1 team-blue2" data-scroll-index="6">
-            <div class="container">
-                <div class="section-head long-shape style-3 text-center mb-70">
-                    <h3>Meet Our <span>Amazing Team</span></h3>
-                </div>
-                <div class="content">
-                    <div class="team_box">
-                        <div class="avatar">
-                            <img src="assets/img/team/1.jpeg" alt="">
-                        </div>
-                        <div class="info">
-                            <h6><a href="#">Michael Edwards</a></h6>
-                            <small>CEO Founder</small>
-                            <div class="social_icons">
-                                <a href="#">
-                                    <i class="fab fa-twitter"></i>
-                                </a>
-                                <a href="#">
-                                    <i class="fab fa-facebook-f"></i>
-                                </a>
-                                <a href="#">
-                                    <i class="fab fa-linkedin-in"></i>
-                                </a>
-                                <a href="#">
-                                    <i class="fab fa-github"></i>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="team_box">
-                        <div class="avatar">
-                            <img src="assets/img/team/2.jpeg" alt="">
-                        </div>
-                        <div class="info">
-                            <h6><a href="#">Bobby Kane</a></h6>
-                            <small>CTO</small>
-                            <div class="social_icons">
-                                <a href="#">
-                                    <i class="fab fa-twitter"></i>
-                                </a>
-                                <a href="#">
-                                    <i class="fab fa-linkedin-in"></i>
-                                </a>
-                                <a href="#">
-                                    <i class="fab fa-github"></i>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="team_box">
-                        <div class="avatar">
-                            <img src="assets/img/team/3.jpeg" alt="">
-                        </div>
-                        <div class="info">
-                            <h6><a href="#">Robert Downey Jr</a></h6>
-                            <small>Project Manager</small>
-                            <div class="social_icons">
-                                <a href="#">
-                                    <i class="fab fa-twitter"></i>
-                                </a>
-                                <a href="#">
-                                    <i class="fab fa-facebook-f"></i>
-                                </a>
-                                <a href="#">
-                                    <i class="fab fa-linkedin-in"></i>
-                                </a>
-                                <a href="#">
-                                    <i class="fab fa-github"></i>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="team_box">
-                        <div class="avatar">
-                            <img src="assets/img/team/4.jpeg" alt="">
-                        </div>
-                        <div class="info">
-                            <h6><a href="#">Andrew Robertson</a></h6>
-                            <small>Marketing Leader</small>
-                            <div class="social_icons">
-                                <a href="#">
-                                    <i class="fab fa-twitter"></i>
-                                </a>
-                                <a href="#">
-                                    <i class="fab fa-linkedin-in"></i>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="team_box">
-                        <div class="avatar">
-                            <img src="assets/img/team/5.jpeg" alt="">
-                        </div>
-                        <div class="info">
-                            <h6><a href="#">Alexander Avery</a></h6>
-                            <small>Creative Director</small>
-                            <div class="social_icons">
-                                <a href="#">
-                                    <i class="fab fa-facebook-f"></i>
-                                </a>
-                                <a href="#">
-                                    <i class="fab fa-linkedin-in"></i>
-                                </a>
-                                <a href="#">
-                                    <i class="fab fa-github"></i>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="bttns mt-4 text-center mt-50">
-                    <a href="page-about-5.html" class="btn rounded-pill bg-blue2 sm-butn mx-1 text-white">
-                        <span>See All Team</span>
-                    </a>
-                    <a href="page-contact-5.html" class="btn rounded-pill border-blue2 hover-blue2 sm-butn mx-1">
-                        <span>Join Our Team</span>
-                    </a>
-                </div>
-            </div>
-        </section>
-        <!-- ====== end team ====== -->
-        <!-- ====== start blog ====== -->
-        <section class="blog section-padding style-3" data-scroll-index="7">
-            <div class="container">
-                <div class="row gx-0 justify-content-between">
-                    <div class="col-lg-5">
-                        <div class="blog-content">
-                            <div class="section-head style-3 d-flex align-items-center mb-50">
-                                <h3>Iteck’s <span>Journal</span></h3> <a href="page-blog-5.html" class="text-muted ms-5 ps-5 mt-2">
-                                    All
-                                    Articles <i class="bi bi-chevron-right ms-1"></i>
-                                </a>
-                            </div>
-                            <div class="card border-0 bg-transparent rounded-0 border-bottom brd-gray pb-4 mb-4">
-                                <div class="row align-items-center">
-                                    <div class="col-lg-4">
-                                        <a href="page-single-post-5.html" class="img img-cover">
-                                            <img src="assets/img/blog/6.png" class="radius-2" alt="...">
-                                        </a>
-                                    </div>
-                                    <div class="col-lg-8">
-                                        <div class="card-body p-0">
-                                            <small class="d-block date text">
-                                                <a href="#"
-                                                   class="text-uppercase border-end brd-light pe-3 me-3 color-blue2 fw-bold">
-                                                    tips
-                                                    & tricks
-                                                </a>
-                                                <i class="bi bi-clock me-1"></i>
-                                                <a href="#" class="op-8">12 Days ago</a>
-                                            </small>
-                                            <h6 class="card-title"><a href="page-single-post-5.html">How To Become A Python Develop Expert</a></h6>
-                                            <div class="d-flex small mt-20 align-items-center justify-content-between op-9">
-                                                <div class="l_side d-flex align-items-center">
-                                                    <span class="icon-10 rounded-circle d-inline-flex justify-content-center align-items-center text-uppercase bg-blue2 p-2 me-2 text-white">
-                                                        a
-                                                    </span>
-                                                    <a href="#">
-                                                        <small class="text-muted">By</small> Admin
-                                                    </a>
-                                                </div>
-                                                <div class="r-side mt-1">
-                                                    <i class="bi bi-chat-left-text me-1"></i>
-                                                    <a href="#">24</a>
-                                                    <i class="bi bi-eye ms-4 me-1"></i>
-                                                    <a href="#">774k</a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="card border-0 bg-transparent rounded-0 border-bottom brd-gray pb-4 mb-4">
-                                <div class="row align-items-center">
-                                    <div class="col-lg-4">
-                                        <a href="page-single-post-5.html" class="img img-cover">
-                                            <img src="assets/img/blog/7.png" class="radius-2" alt="...">
-                                        </a>
-                                    </div>
-                                    <div class="col-lg-8">
-                                        <div class="card-body p-0">
-                                            <small class="d-block date text">
-                                                <a href="#"
-                                                   class="text-uppercase border-end brd-light pe-3 me-3 color-blue2 fw-bold">News</a>
-                                                <i class="bi bi-clock me-1"></i>
-                                                <a href="#" class="op-8">5 Days ago</a>
-                                            </small>
-                                            <h6 class="card-title"><a href="page-single-post-5.html">AI With Fingerprint</a></h6>
-                                            <div class="d-flex small mt-20 align-items-center justify-content-between op-9">
-                                                <div class="l_side d-flex align-items-center">
-                                                    <span class="icon-10 rounded-circle d-inline-flex justify-content-center align-items-center text-uppercase bg-blue2 p-2 me-2  text-white">
-                                                        a
-                                                    </span>
-                                                    <a href="#">
-                                                        <small class="text-muted">By</small> David
-                                                    </a>
-                                                </div>
-                                                <div class="r-side mt-1">
-                                                    <i class="bi bi-chat-left-text me-1"></i>
-                                                    <a href="#">24</a>
-                                                    <i class="bi bi-eye ms-4 me-1"></i>
-                                                    <a href="#">774k</a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="card border-0 bg-transparent rounded-0 pb-4 mb-4 pb-lg-0 mb-lg-0">
-                                <div class="row align-items-center">
-                                    <div class="col-lg-4">
-                                        <a href="page-single-post-5.html" class="img img-cover">
-                                            <img src="assets/img/blog/8.png" class="radius-2" alt="...">
-                                        </a>
-                                    </div>
-                                    <div class="col-lg-8">
-                                        <div class="card-body p-0">
-                                            <small class="d-block date text">
-                                                <a href="#"
-                                                   class="text-uppercase border-end brd-light pe-3 me-3 color-blue2 fw-bold">
-                                                    tips
-                                                    & tricks
-                                                </a>
-                                                <i class="bi bi-clock me-1"></i>
-                                                <a href="#" class="op-8">1 month ago</a>
-                                            </small>
-                                            <h6 class="card-title"><a href="page-single-post-5.html">Solutions For Big Data Issue, Expert Perspective</a></h6>
-                                            <div class="d-flex small mt-20 align-items-center justify-content-between op-9">
-                                                <div class="l_side d-flex align-items-center">
-                                                    <span class="icon-10 rounded-circle d-inline-flex justify-content-center align-items-center text-uppercase bg-blue2 p-2 me-2  text-white">
-                                                        a
-                                                    </span>
-                                                    <a href="#">
-                                                        <small class="text-muted">By</small> Moussa
-                                                    </a>
-                                                </div>
-                                                <div class="r-side mt-1">
-                                                    <i class="bi bi-chat-left-text me-1"></i>
-                                                    <a href="#">24</a>
-                                                    <i class="bi bi-eye ms-4 me-1"></i>
-                                                    <a href="#">774k</a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-5">
-                        <div class="faq style-3">
-                            <div class="section-head style-3 text-uppercase mb-50">
-                                <h3>FAQS</h3>
-                            </div>
-                            <div class="accordion" id="accordionExample">
-                                <div class="accordion-item">
-                                    <h2 class="accordion-header" id="heading1">
-                                        <button class="accordion-button" type="button" data-bs-toggle="collapse"
-                                                data-bs-target="#collapse1" aria-expanded="true"
-                                                aria-controls="collapse1">
-                                            How Benefit That I Got When Choose Basic Plan?
-                                        </button>
-                                    </h2>
-                                    <div id="collapse1" class="accordion-collapse collapse show"
-                                         aria-labelledby="heading1" data-bs-parent="#accordionExample">
-                                        <div class="accordion-body">
-                                            Through the collaboration with customers in discussing needs and demand,
-                                            we're able to attain mutual understanding, gain customer trust to offer
-                                            appropriate advice
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="accordion-item">
-                                    <h2 class="accordion-header" id="heading2">
-                                        <button class="accordion-button collapsed" type="button"
-                                                data-bs-toggle="collapse" data-bs-target="#collapse2"
-                                                aria-expanded="false" aria-controls="collapse2">
-                                            Can I Pay With Paypal or Payoneer?
-                                        </button>
-                                    </h2>
-                                    <div id="collapse2" class="accordion-collapse collapse"
-                                         aria-labelledby="heading2" data-bs-parent="#accordionExample">
-                                        <div class="accordion-body">
-                                            Through the collaboration with customers in discussing needs and demand,
-                                            we're able to attain mutual understanding, gain customer trust to offer
-                                            appropriate advice
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="accordion-item">
-                                    <h2 class="accordion-header" id="heading3">
-                                        <button class="accordion-button collapsed" type="button"
-                                                data-bs-toggle="collapse" data-bs-target="#collapse3"
-                                                aria-expanded="false" aria-controls="collapse3">
-                                            How Long For A Standard Project
-                                        </button>
-                                    </h2>
-                                    <div id="collapse3" class="accordion-collapse collapse"
-                                         aria-labelledby="heading3" data-bs-parent="#accordionExample">
-                                        <div class="accordion-body">
-                                            Through the collaboration with customers in discussing needs and demand,
-                                            we're able to attain mutual understanding, gain customer trust to offer
-                                            appropriate advice
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="accordion-item">
-                                    <h2 class="accordion-header" id="heading4">
-                                        <button class="accordion-button collapsed" type="button"
-                                                data-bs-toggle="collapse" data-bs-target="#collapse4"
-                                                aria-expanded="false" aria-controls="collapse4">
-                                            How About Data Security & NDA Agreement
-                                        </button>
-                                    </h2>
-                                    <div id="collapse4" class="accordion-collapse collapse"
-                                         aria-labelledby="heading4" data-bs-parent="#accordionExample">
-                                        <div class="accordion-body">
-                                            Through the collaboration with customers in discussing needs and demand,
-                                            we're able to attain mutual understanding, gain customer trust to offer
-                                            appropriate advice
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="accordion-item border-0">
-                                    <h2 class="accordion-header" id="heading5">
-                                        <button class="accordion-button collapsed" type="button"
-                                                data-bs-toggle="collapse" data-bs-target="#collapse5"
-                                                aria-expanded="false" aria-controls="collapse5">
-                                            Can We Make An Own Tailored-AI ?
-                                        </button>
-                                    </h2>
-                                    <div id="collapse5" class="accordion-collapse collapse"
-                                         aria-labelledby="heading5" data-bs-parent="#accordionExample">
-                                        <div class="accordion-body">
-                                            Through the collaboration with customers in discussing needs and demand,
-                                            we're able to attain mutual understanding, gain customer trust to offer
-                                            appropriate advice
-                                        </div>
-                                    </div>
-                                </div>
-                                <a href="page-contact-5.html" class="text-muted text-uppercase mt-50 small">
-                                    See More
-                                    <i class="bi bi-chevron-right ms-1"></i>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="client-logos mt-100">
-                    <div class="row align-items-center">
-                        <div class="col-6 col-lg-2">
-                            <a href="#" class="img d-block">
-                                <img src="assets/img/logos/1.png" alt="">
-                            </a>
-                        </div>
-                        <div class="col-6 col-lg-2">
-                            <a href="#" class="img d-block">
-                                <img src="assets/img/logos/2.png" alt="">
-                            </a>
-                        </div>
-                        <div class="col-6 col-lg-2">
-                            <a href="#" class="img d-block">
-                                <img src="assets/img/logos/3.png" alt="">
-                            </a>
-                        </div>
-                        <div class="col-6 col-lg-2">
-                            <a href="#" class="img d-block">
-                                <img src="assets/img/logos/4.png" alt="">
-                            </a>
-                        </div>
-                        <div class="col-6 col-lg-2">
-                            <a href="#" class="img d-block">
-                                <img src="assets/img/logos/5.png" alt="">
-                            </a>
-                        </div>
-                        <div class="col-6 col-lg-2">
-                            <a href="#" class="img d-block">
-                                <img src="assets/img/logos/6.png" alt="">
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <img src="assets/img/blog/v_lines.png" alt="" class="v_lines">
-        </section>
-        <!-- ====== end blog ====== -->
-        <!-- ====== start chat-banner ====== -->
-        <section class="chat-banner style-3 section-padding">
-            <div class="container">
-                <div class="row align-items-center">
-                    <div class="col-lg-7">
-                        <div class="info">
-                            <h3>Assess Your Business Potentials Now & Find Opportunities For <span>Bigger Success</span></h3>
-                        </div>
-                    </div>
-                    <div class="col-lg-5">
-                        <div class="bttns text-end">
-                            <a href="page-contact-5.html" class="btn rounded-pill bg-white border-1 border-white text-dark sm-butn me-2">
-                                <span>Let’s Chat</span>
-                            </a>
-                            <a href="page-contact-5.html" class="btn rounded-pill border-1 border-white text-white sm-butn">
-                                <span>Get Information</span>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- ====== end chat-banner ====== -->
-    </main>
-    <!--End-Contents-->
-    <!-- ====== start footer ====== -->
-    <footer class="style-3">
-        <div class="container">
-            <div class="row gx-0 justify-content-between">
-                <div class="col-lg-3">
-                    <div class="items">
-                        <div class="title">
-                            Iteck - 1st Choice for IT Solutions
-                        </div>
-                        <small class="text">
-                            Over 25 years working in IT services developing software applications and mobile apps for clients all over the world. For your very specific industry, we have highly-tailored IT solutions.
-                        </small>
-                        <div class="socail-icons">
-                            <a href="#" class="icon-35 rounded-circle bg-gray overflow-hidden d-inline-flex align-items-center justify-content-center text-gray me-2">
-                                <i class="fab fa-twitter"></i>
-                            </a>
-                            <a href="#" class="icon-35 rounded-circle bg-gray overflow-hidden d-inline-flex align-items-center justify-content-center text-gray me-2">
-                                <i class="fab fa-facebook-f"></i>
-                            </a>
-                            <a href="#" class="icon-35 rounded-circle bg-gray overflow-hidden d-inline-flex align-items-center justify-content-center text-gray">
-                                <i class="fab fa-instagram"></i>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3">
-                    <div class="items">
-                        <div class="title">
-                            Information
-                        </div>
-                        <small class="text mb-10 d-block">
-                            223 Thatcher Road St, Brookly, Manhattan, NY 10463, United States
-                        </small>
-                        <small class="text mb-10 d-block">
-                            +031 5689 89 98
-                        </small>
-                        <small class="text d-block">
-                            contact@Itecksolution.co
-                        </small>
-                    </div>
-                </div>
-                <div class="col-lg-2">
-                    <div class="items">
-                        <div class="title">
-                            Useful Links
-                        </div>
-                        <ul>
-                            <li>
-                                <a href="home-software-company.html"> Home </a>
-                            </li>
-                            <li>
-                                <a href="page-about-5.html"> About Iteck </a>
-                            </li>
-                            <li>
-                                <a href="page-portfolio-5.html"> Projects </a>
-                            </li>
-                            <li>
-                                <a href="page-about-5.html"> How It Works </a>
-                            </li>
-                            <li>
-                                <a href="page-blog-5.html"> Blog </a>
-                            </li>
-                            <li>
-                                <a href="page-contact-5.html"> Contact </a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-lg-2">
-                    <div class="items">
-                        <div class="title">
-                            Services
-                        </div>
-                        <ul>
-                            <li>
-                                <a href="page-services-5.html"> It Consultation </a>
-                            </li>
-                            <li>
-                                <a href="page-services-5.html"> Software Development </a>
-                            </li>
-                            <li>
-                                <a href="page-services-5.html"> AI Machine Learning </a>
-                            </li>
-                            <li>
-                                <a href="page-services-5.html"> Data Security </a>
-                            </li>
-                            <li>
-                                <a href="page-services-5.html"> Cloud Services </a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-            <div class="foot">
-                <div class="row">
-                    <div class="col-lg-3">
-                        <div class="logo">
-                            <img src="assets/img/logo_b2.png" alt="">
-                        </div>
-                    </div>
-                    <div class="col-lg-6">
-                        <small class="small">
-                            © 2022 Copyrights by <a href="#" class="fw-bold text-decoration-underline">Iteck Co.</a> All Rights Reserved. Designed by <a href="#" class="fw-bold text-decoration-underline">ThemesCamp</a>
-                        </small>
-                    </div>
-                </div>
-                <img src="assets/img/testimonials/testi3_lines.png" alt="" class="testi_lines w-100">
             </div>
         </div>
-        <img src="assets/img/contact_globe.svg" alt="" class="contact_globe">
-    </footer>
-    <!-- ====== end footer ====== -->
-    <!-- ====== start to top button ====== -->
-    <a href="#" class="to_top bg-gray rounded-circle icon-40 d-inline-flex align-items-center justify-content-center">
-        <i class="bi bi-chevron-up fs-6 text-dark"></i>
-    </a>
-    <!-- ====== end to top button ====== -->
-    <!-- ====== request ====== -->
-    <script src="assets/js/lib/jquery-3.0.0.min.js"></script>
-    <script src="assets/js/lib/jquery-migrate-3.0.0.min.js"></script>
-    <script src="assets/js/lib/bootstrap.bundle.min.js"></script>
-    <script src="assets/js/lib/wow.min.js"></script>
-    <script src="assets/js/lib/jquery.fancybox.js"></script>
-    <script src="assets/js/lib/lity.js"></script>
-    <script src="assets/js/lib/swiper.min.js"></script>
-    <script src="assets/js/lib/jquery.waypoints.min.js"></script>
-    <script src="assets/js/lib/jquery.counterup.js"></script>
-    <script src="assets/js/lib/pace.js"></script>
-    <script src="assets/js/lib/scrollIt.min.js"></script>
-    <script src="assets/js/main.js"></script>
+    </div>
+    <!--    footer end -->
+    
+    <div class="go-top active">
+        <i class="bi bi-arrow-up"></i> 
+    </div>
 
+
+    <script src="bootstrap/bootstrap.bundle.min.js"></script>
+    <script src="js/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
+    <!--        counter js-->
+    <script src="https://unpkg.com/counterup2@2.0.2/dist/index.js"> </script>
+ 
+    <script src="js/script.js"></script>
+    <script src="js/form.js"></script>
+    
+   
 </body>
 
 </html>
