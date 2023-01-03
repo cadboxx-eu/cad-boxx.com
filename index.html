@@ -1,337 +1,620 @@
-<!DOCTYPE html>
-<html lang="pt-BR">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title></title>
-    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
-    <!-- Google Fonts  -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
-      rel="stylesheet"
-    />
-    <!-- Bootstrap Icons -->
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css"
-    />
-    <!-- Estilos -->
-    <link rel="stylesheet" href="./css/style.css"/>
-  </head>
-  <body>
-    <!-- Cabeçalho e Banner -->
-    <header id="header">
-      <div id="inner-header">
-        <h2 id="brand">This is cad-boxx.com</h2>
-        <nav id="navbar">
-            <a href="#header">Home</a>
-            <a href="#expertise-areas">Services</a>
-            <a href="#about">About</a>
-            <a href="#team">Models</a>
-            <a href="#contact">Contact</a>
-            
-        </nav>
-        <!-- Menu Mobile -->
-        <i class="bi bi-list" id="menu"></i>
-        <nav id="mobile-navbar">
-            <i class="bi bi-x-lg" id="close-menu"></i>
-            <a href="#header">Home</a>
-            <a href="#expertise-areas">Services</a>
-            <a href="#about">About</a>
-            <a href="#team">Models</a>
-            <a href="#contact">Contact</a>
-                 
-        </nav> 
-      </div>s
-        <span class="square"><imgu
-          src="#"
-          alt=""
-        /></span>
-        <h2>CADBOXX offers a new way!</h2>
-        <p><h2>
-    Interactive 3D Environment</br>
-    Parametric 3D Model Library</br>
-    Simulation & Animation</br>
-    Secure Cloud Storage</br>
-</h2>
-          
-            
-        </p>
-      </div>
-      <div class="banner">
-        <span class="square"></span>
-        <h2>Publish and Share</h2>
-        <p><h2>
-    Integrated Hubs Account</br>
-    Private Assets Library</br>
-    Social Media Links</br>
-</h2>
-            
-        </p>
-      </div>
-      <div class="banner">
-        <span class="square"></span>
-        <h2>Special Tools</h2>
-        <p><h2>
-    Rapid Deploy</br>
-    Unique Joints System</br>
-    Unlimited Downloads</br>
-</h2>
-            
-        </p>
-      </div>
-      <div class="dots">
-        <div class="dot active"></div>
-        <div class="dot"></div>
-        <div class="dot"></div>
-      </div>
-    </header>
-    <!-- Áreas de atuação -->
-    <main id="expertise-areas" class="text-image-section">
-        <div id="expertise-information" class="text-container">
-            <p class="section-subtitle">WHY CAD-BOXX.COM?</p>
-            <h3 class="section-title">
-                We make building mechanical assemblies easier by providing a library of parametric 3D Models which can be placed into your scene in a single click. All Models are editable and interactive when placed into a scene which can be Physics-based or not.</br>
-                The service  offers a unique blend of open source and specialist code writen in-house. All OS sections are free!</br>
-                Upload a Model to our Cloud storage to build your own private asset library based in the Cloud. Build scenes by dropping these models into a new scene created with SketchFab models. Add your own custom parts, and then define how they all interact by setting the names of the components in the scene.
-                </br>That´s right, just edit the name of each part to define how they move.
+<!doctype html>
+<html lang="en">
 
-            </h3>
-            <a href="https://3d-assembly.com/exporter/assembler.html" target="_blank" class="btn links-container">Demó´s</a><!--
-            <a href="demo/superhands/exporter/aincraft/index.html" target="_blank" class="btn links-container">index-mouse</a>
-            <!--<a href="demo/superhands/examples/physics/index-mouse.html" target="_blank" class="btn links-container">DEMO</a>
-        -->
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Ataur - Solar Energy Landing Page Template</title>
+    <link rel="icon" href="image/fav.png">
+    <link href="demo/new-front/bootstrap/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.css" type="text/css" media="screen" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
-        </div>
-        <div id="expertise-image-container" class="image-container">
-            <i class="bi bi-people"></i>
-            <img src="img/sq05.jpg"
-                 alt="Advogados da Pearson Hardman" />
-        </div>
-        <!-- Outros servicos --
-          <div class="service">
-              <img src="img/sq8.jpg" style="width:20%;height:100%;display:inline-block;margin:auto;padding:inherit" />
-              <i class="bi bi-building"></i>
-              <div class="service-info">
-                  <h4>Asset library</h4>
-                  <p>
-                      <h4>
-                          Create your own Asset Library so that you can easily deploy your models, images and sounds to other projects in the future.
-                          A user-friendly set of tools to apply constraints and set limits of movement of the individual parts of the assembly.
-                      </h4>
-                  </p>
-              </div>
-          </div>
-          <div class="service">
-              <img src="img/sq8.jpg" style="width:20%;height:100%;display:inline-block;margin:auto;padding:inherit" />
-              <i class="bi bi-building"></i>
-              <div class="service-info">
-                  <h4>Apply Constraints</h4>
-                  <p>
-                      <h4>
-                          A user-friendly set of tools to apply constraints and set limits of movement of the individual parts of the assembly.
+    <link rel="stylesheet" href="demo/new-front/style.css">
+</head>
 
-                      </h4>
-                  </p>
-              </div>
-          </div>
-          <div class="service">
-              <img src="img/sq8.jpg" style="width:20%;height:100%;display:inline-block;margin:auto;padding:inherit" />
-              <i class="bi bi-building"></i>
-              <div class="service-info">
-                  <h4>Animate and Record</h4>
-                  <p>
-                      <h4>
-                          CADBOXX has an integrated recording suite in which users can record the simulation from within the environment, in Virtual Reality!
+<body>
 
-                      </h4>
-                  </p>
-              </div>
-          </div>
-          -->
-    </main>
-    <!-- Sobre nós -->
-    <section id="about">
-      <div id="about-text">
-        <p class="section-subtitle">The System</p>
-        <h3 class="section-title">
-          Stand-alone
-        </h3>
-        <div class="about-description">
-          <i class="bi bi-briefcase"></i>
-          <div>
-            <h4>Self-contained</h4>
-            <p>
-                The simplest way to get going with cadboxx is to use it as a stand-alone system. No set-up is required and the user can just open up the web app and start using thw cadboxx to manipulate their models.
-                Build new geometry components and apply textures from our own library of metals and finishes.
 
-            </p>
-          </div>
-        </div>
-        <div class="about-description">
-          <i class="bi bi-book"></i>
-          <div>
-            <h4>Hubs link</h4>
-            <p>
-                By far the most effective way to use cadboxx is to exploit the advantages offered by the links between GitHub, Hubs by Mozilla and Sketchfab.
-                Build your own custom library in Spoke and import all the models into cadboxx as an assembly in a single file. Then just use the tools in cadboxx to apply the constraints and set-up the scene.
-                
-            </p>
-          </div>
-        </div>
-      </div>
-      <div id="about-data">
-          <div class="data">
-              <i class="bi bi-person"></i>
-              <p class="text">ANY DEVICE</p>
-              <p class="text">Mobile, desktop and VR</p>
-          </div>
-          <div class="data">
-              <i class="bi bi-check-all"></i>
-              <p class="text">ALL PLATFORMS</p>
-              <p class="text">Cloud Platform</p>
-          </div>
-          <div class="data">
-              <i class="bi bi-building"></i>
-              <p class="text">ALL 3D Systems</p>
-              <p class="text">CAD, 3D & Gaming</p>
-          </div>
-          <div class="data">
-              <i class="bi bi-building"></i>
-              <p class="text">ALL 3D Systems</p>
-              <p class="text">CAD, 3D & Gaming</p>
-          </div>
-      </div>
-    </section>
-    <!-- Depoimentos -->
-    <section id="testimonials" class="text-image-section">
-        <div id="testimonial-information" class="text-container">
-            <p class="section-subtitle">We are clients ourselves</p>
-            <h3 class="section-title">
-                The People behind cadboxx are 3D designers!
-            </h3>
-            <div class="author">
-                <div class="author-info">
-                    <p class="author-name">Michael Cornan</p>
-                    <p class="author-job">CADBOXX CEO</p>
-                </div>
-                <img src="img/PROFILE.jpeg" alt="Jhon Doe">
+    <!--   header start -->
+    <nav id="navbar" class="navbar nav navbar-expand-lg">
+        <div class="container">
+            <img class="img-fluid w-25" src="img/cadboxx-logo.png" alt="">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class=""> <i class="bi bi-list"></i> </span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item ">
+                        <a class="nav-link scroll h1 fw-bold" aria-current="page" href="#home">HOME</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link scroll h1 fw-bold" href="#about">ABOUT </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link scroll h1 fw-bold" href="#service">MODELS </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link scroll h1 fw-bold" href="#news">APPS</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link btn-one h1 fw-bold" href="#contact">CONTACT </a>
+                    </li>
+                </ul>
             </div>
-            <h3 class="section-title">
-            </h3>
-            <div class="author">
-                <div class="author-info">
-                    <p class="author-name">Paula Suarez</p>
-                    <p class="author-job">Project Manager</p>
+        </div>
+    </nav>
+    <!--   header end -->
+    <!--    banner area start -->
+    <div class="banner-area" id="home">
+        <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="false">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="https://cdn.glitch.com/2a3af8bb-e7b2-4e50-8ce2-68e3e8cf4538%2Fsclight.png?v=1618928375551" class="d-block w-100" alt="...">
+                    <div class="carousel-caption my-auto  pb-5">
+                        <p class=" fw-bold my-2 py-2 amet text-uppercase" data-aos="zoom-in-left">Modern Technology with Common Sense.</p>
+                        <h1 class="mt-3  mb-3 display-1 fw-bold" data-aos="zoom-in-right">Engineering applied with code.</h1>
+                        <button class="button-one mt-5 me-0 me-sm-5" data-aos="zoom-out-up">Get Start</button>
+                        <button class="button-two mt-5" data-aos="zoom-out-up">Get Involved</button>
+                    </div>
                 </div>
-                <img src="img/paula.jpg" alt="Paula Cinton">
-            </div>l
-        </div>
-      <div id="testimonial-image-container" class="image-container">
-        <i class="bi bi-quote"></i>
-        <img src="img/sq7.png" alt="Advogado em um tribunal">
-      </div>
-    </section>
-    <!-- Colaboradores -->
-    <section id="team">
-      <span class=""></span>
-      <h3>
-        
-      </h3>
-      <div class="employees">
-        <div class="employee">
-          <img src="img/ball-joint.png" alt="" />
-          <p class="employee-name">Upload your models</p>
-          <p class="employee-role">to our Cloud Storage</p>
-        </div>
-        <div class="employee">
-          <img src="img/blue-rootz.png" alt="" />
-          <p class="employee-name">Configure the models</p>
-          <p class="employee-role">in the scene</p>
-        </div>
-        <div class="employee">
-          <img src="img/boxandcyl.png" alt="" />
-          <p class="employee-name">Animate the scene</p>
-          <p class="employee-role">or switch on Physics</p>
-        </div>
-        <div class="employee">
-          <img src="img/touch-controllers.png" alt="" />
-          <p class="employee-name">Analize the motion</p>
-          <p class="employee-role">and optimize the assembly</p>
-        </div>
-      </div>
-    </section>
-    <!-- Contato --
-    <section id="contact" class="text-image-section">
-      <div id="contact-image-container" class="image-container">
-        <img src="img/sq08.jpg" >
-      </div>
-      <div id="contact-information" class="text-container">
-        <i class="bi bi-envelope"></i>
-        <p class="section-subtitle">Contact Us</p>
-        <form>
-          <div class="form-control">
-            <input type="text" name="name" id="name" placeholder="Nome">
-            <input type="email" name="email" id="email" placeholder="E-mail">
-          </div>
-          <input type="text" name="phone" id="phone" placeholder="Telephone">
-          <textarea name="message" id="message" placeholder="Your message..."></textarea>
-          <input type="submit" value="Send" class="btn">
-        </form>
-      </div>
-    </section>
-    <!-- Footer -->
-    <footer id="footer">
-      <div class="contact-info">
-        <div class="footer-brand">
-          <h2>cad-boxx.com</h2>
-          <p>Software, Apps and 3D Models<p>
-        </div>
-        <p><i class="bi bi-geo-alt"></i> Tias, Las Palmas 35572</p>
-        <p><i class="bi bi-telephone"></i> +34 631 821 452</p>
-        <p><i class="bi bi-envelope"></i> fasteng@cad-boxx.com</p>
-        <div class="social-networks">
-          <p>Connect:</p>
-          <div class="networks">
-            <a href="#"><i class="bi bi-facebook"></i></a>
-            <a href="#"><i class="bi bi-twitter"></i></a>
-            <a href="#"><i class="bi bi-linkedin"></i></a>
-            <a href="#"><i class="bi bi-instagram"></i></a>
-          </div>
-        </div>
-      </div><!--
-      <div class="links-container">
-        <h4>Outros serviços</h4>
-        <nav>
-          <a href="#">Propriedade intelectual</a>
-          <a href="#">LGPD</a>
-          <a href="#">Direito internacional</a>
-          <a href="#">Processos</a>
-        </nav>
-      </div>-->
-      <div class="links-container">
-        <h4>Pages</h4>
-        <nav>
-          <a href="#">Terms and Conditions</a>
-          <a href="#">Privacy Policy</a>
-          <a href="#">Talk to a specialist</a>
-          <a href="#">FAQ</a>
-        </nav>
-      </div><!--
-      <div class="links-container">
-        <h4>Consulta grátis</h4>
-        <div class="phone-number">
-          <i class="bi bi-telephone"></i>
-          <p>(99) 9999-9999</p>
-        </div>
-        <p class="phone-info">
-          Este telefone é especial para tratar de casos já em andamento
-        </p>
-      </div>-->
-    </footer>
+                <div class="carousel-item">
+                    <img src="https://cdn.glitch.com/2a3af8bb-e7b2-4e50-8ce2-68e3e8cf4538%2Fsclight.png?v=1618928375551" class="d-block w-100" alt="...">
+                    <div class="carousel-caption" data-aos="fade-up" data-aos-duration="3000">
+                        <p class=" fw-bold my-2 py-2 text-uppercase">We Build 3D Assemblies in a New Way</p>
+                        <h1 class="mt-3 amet text-capitalize display-1 fw-bold">Applied Engineering thinking </h1>
+                        <button class="button-one mt-5 me-0 me-sm-5">Get Start</button>
+                        <button class="button-two mt-5">Get Involved</button>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="https://cdn.glitch.com/2a3af8bb-e7b2-4e50-8ce2-68e3e8cf4538%2Fsclight.png?v=1618928375551" class="d-block w-100" alt="...">
+                    <div class="carousel-caption " data-aos="fade-up" data-aos-duration="3000">
+                        <p class=" fw-bold my-2 py-2 text-uppercase">THE REAL DEAL</p>
+                        <h1 class="mt-3 amet display-1 fw-bold">Making The Difference To Every Life We Touch</h1>
+                        <button class="button-one mt-5 me-0 me-sm-5">Get Start</button>
+                        <button class="button-two mt-5">Get Involved</button>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
 
-    <script type="module" src="js/script.js"></script>
-  </body>
+        </div>
+    </div>
+    <!--    banner area end -->
+    <!--  about area start -->
+    <div class="container my-5 py-5" id="about">
+        <div class="row">
+            <div class="col-lg-12">
+                <h1 class="siam text-center mb-5 pb-5 display-4 fw-bold">THIS IS A CADBOXX</h1>
+            </div>
+            <div class="col-lg-6 my-auto">
+                <div class="emon">
+                    <h1>Create joints between 3D Models and add motion to any assembly.</h1>
+                    <p class="mt-5 lh-lg">A self-contained 3D Environment that runs in a standard HTML Web Page. Create and edit high quality models, add textures and download instantly. Create an publish amazing 3D and Virtual Reality Experiences of your moving assembly and see how it reacts in a Physics-based Workspace. Create fantastic recordings of your work from inside the moving assembly. We don´t do free trials, because this would raise the price. cadboxx offers amazing value and does things that no other system can. All future updates are included duiring your license term.</p>
+                    <button class="button-one mt-5">Visit Sketchfab</button>
+                </div>
+            </div>
+            <div class="col-lg-6 mt-5 mt-sm-0">
+                <div class="rifat">
+                    <img class=" img-fluid image-one" src="https://cdn.glitch.global/2a3af8bb-e7b2-4e50-8ce2-68e3e8cf4538/cadboxx-border.png?v=1659362950670" alt="">
+                    
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <!--  about area end -->
+    <!--  service area start -->
+    <div class="container my-5 py-5" id="service">
+        <div class="row">
+            <div class="col-lg-12 mb-5">
+                <div class="masum text-center">
+                    <h1 class="fw-bold text-center mb-4">Our Services</h1>
+                    <h5>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex, expedita.</h5>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="card-one new-card " style="">
+                    <div class="card-body  text-center shadow my-5 py-5" data-aos="fade-down-right">
+                        <h2 class="card-title">MODELS</h2>
+                        <p class="card-text mt-4 mb-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel, numquam. Laborum, sunt tenetur mollitia iure.</p>
+                        <a href="#" class="btn button-one">Go somewhere</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="card-one new-card " style="">
+                    <div class="card-body  text-center shadow my-5 py-5">
+                        <h2 class="card-title">JOINTS</h2>
+                        <p class="card-text mt-4 mb-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel, numquam. Laborum, sunt tenetur mollitia iure.</p>
+                        <a href="#" class="btn button-one">Go somewhere</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="card-one new-card " style="">
+                    <div class="card-body  text-center shadow my-5 py-5">
+                        <h2 class="card-title">ASSEMBLY</h2>
+                        <p class="card-text mt-4 mb-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel, numquam. Laborum, sunt tenetur mollitia iure.</p>
+                        <a href="#" class="btn button-one">Go somewhere</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="card-one new-card " style="">
+                    <div class="card-body  text-center shadow my-5 py-5" data-aos="fade-down-right">
+                        <h2 class="card-title">DESIGN CONSULTANCY</h2>
+                        <p class="card-text mt-4 mb-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel, numquam. Laborum, sunt tenetur mollitia iure.</p>
+                        <a href="#" class="btn button-one">Go somewhere</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="card-one new-card " style="">
+                    <div class="card-body  text-center shadow my-5 py-5" data-aos="fade-up">
+                        <h2 class="card-title">VR</h2>
+                        <p class="card-text mt-4 mb-4">We will create your bespoke VR experience using our own software .</p>
+                        <a href="#" class="btn button-one">Go somewhere</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="card-one new-card " style="">
+                    <div class="card-body  text-center shadow my-5 py-5">
+                        <h2 class="card-title">AR</h2>
+                        <p class="card-text mt-4 mb-4">We will create your bespoke AR experience using our own software.</p>
+                        <a href="#" class="btn button-one">Go somewhere</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--  service area end -->
+    <!--        gallery area start  -->
+    <div class="container py-5 mb-5 gallery-area" id="fleet">
+        <div class="row">
+            <div class="col-md-12 mb-5 text-center">
+                <p class="h1"> OUR GALLERY </p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-3 my-3" data-aos="fade-down-right">
+                <a data-fancybox="gallery" data-src="image/10.jpg">
+                    <img alt="" src="image/10.jpg" />
+                </a>
+            </div>
+            <div class="col-md-3 my-3">
+                <a data-fancybox="gallery" data-src="image/12.jpg">
+                    <img alt="" src="image/12.jpg" />
+                </a>
+            </div>
+            <div class="col-md-3 my-3">
+                <a data-fancybox="gallery" data-src="image/13.jpg">
+                    <img alt="" src="image/13.jpg" />
+                </a>
+            </div>
+            <div class="col-md-3 my-3">
+                <a data-fancybox="gallery" data-src="image/14.jpg">
+                    <img alt="" src="image/14.jpg" />
+                </a>
+            </div>
+            <div class="col-md-3 my-3" data-aos="fade-up-right">
+                <a data-fancybox="gallery" data-src="image/15.jpg">
+                    <img alt="" src="image/15.jpg" />
+                </a>
+            </div>
+            <div class="col-md-3 my-3" data-aos="fade-up">
+                <a data-fancybox="gallery" data-src="image/07.jpg">
+                    <img alt="" src="image/07.jpg" />
+                </a>
+            </div>
+            <div class="col-md-3 my-3" data-aos="fade-up">
+                <a data-fancybox="gallery" data-src="image/05.jpg">
+                    <img alt="" src="image/05.jpg" />
+                </a>
+            </div>
+            <div class="col-md-3 my-3" data-aos="fade-up-left">
+                <a data-fancybox="gallery" data-src="image/08.jpg">
+                    <img alt="" src="image/08.jpg" />
+                </a>
+            </div>
+        </div>
+    </div>
+    <!--        gallery area  end -->
+    <!--  counter area start -->
+    <div class="bg-color-two my-5 py-5">
+        <div class="container  ">
+            <div class="row g-4 my-3 py-3 text-white">
+
+                <div class="col-lg-3">
+                    <div class=" text-center ">
+                        <h1 class="counter">450</h1>
+                        <p>Project Completed</p>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class=" text-center">
+                        <h1 class="counter">940</h1>
+                        <p>Expert Consultants</p>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class=" text-center">
+                        <h1 class="counter">365</h1>
+                        <p>Happy Clients</p>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class=" text-center">
+                        <h1 class="counter">235</h1>
+                        <p>5 Stars Rating</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--  counter area end -->
+    <!--  section area start -->
+    <div class="milon my-5 py-5">
+        <div class="container" id="news">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="liton">
+                        <h1 class="text-center display-5 fw-bold text-white">Recent News</h1>
+                        <p class="text-center mt-4 text-white">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus vel, doloribus magnam eos reprehenderit nulla hic. Fuga soluta molestiae inventore!</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row my-5 py-5 g-4">
+                <div class="col-lg-4">
+                    <div class="card rounded-0 border-0">
+                        <img src="image/05.jpg" class="card-img-top mahedi rounded-0 border-0" alt="...">
+                        <div class="card-body">
+                            <p class="mt-2">July 21, 2022</p>
+                            <h3 class="card-title fw-bold">The Most Unusual Uses Of Artifi- cial Intelligence.</h3>
+                            <p class="card-text mt-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad, impedit!Lorem ipsum dolor sit amet, consectetur adipisicing elit. A minus facilis vitae, vero minima iure?</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="card rounded-0 border-0" data-aos="flip-up">
+                        <img src="image/06.jpg" class="card-img-top mahedi rounded-0 border-0" alt="...">
+                        <div class="card-body">
+                            <p class="mt-2">July 21, 2022</p>
+                            <h3 class="card-title fw-bold">Highly Promotion and Secure Energetic</h3>
+                            <p class="card-text mt-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus, possimus.Lorem ipsum dolor sit amet, consectetur adipisicing elit. A minus facilis vitae, vero minima iure?</p>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="card rounded-0 border-0" data-aos="fade-left">
+                        <img src="image/07.jpg" class="card-img-top mahedi rounded-0 border-0" alt="...">
+                        <div class="card-body ">
+                            <p class="mt-2">July 21, 2022</p>
+                            <h3 class="card-title fw-bold">Smart grid technology innovation </h3>
+                            <p class="card-text mt-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus, possimus.Lorem ipsum dolor sit amet, consectetur adipisicing elit. A minus facilis vitae, vero minima iure?</p>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--  section area end -->
+    <!--  price area start -->
+    <div class="plan my-5 py-5">
+        <div class="container ">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="price text-center">
+                        <p>PRICING & PLAN</p>
+                        <h1 class="color-text">Flexible & Transparent Pricing</h1>
+                        <hr class="h-color mt-4 mx-auto">
+                    </div>
+                </div>
+                <div class="col-lg-4 my-3 py-3 ">
+                    <div class="card-four shadow text-center my-0 my-sm-5 py-5">
+                        <h3 class="fw-bold mb-3">Residential</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum, rem. ipsum dolor sit amet.</p>
+                        <p><sup class="h3">$</sup><span class="h1">5.25</span>/ Watt</p>
+                        <button class="button-one mb-4">Get Start</button>
+                        <h5>Stylizing</h5>
+                        <hr class="h-color mx-auto">
+                        <h5>Premium</h5>
+                        <hr class="h-color mx-auto">
+                        <h5>Installation</h5>
+                        <hr class="h-color mx-auto">
+                        <h5>Replacement</h5>
+                    </div>
+                </div>
+                <div class="col-lg-4 my-3 py-3">
+                    <div class="card-four shadow text-center my-0 my-sm-5 py-5">
+                        <h3 class="fw-bold mb-3">Future Solar</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum, rem. ipsum dolor sit amet.</p>
+                        <p><sup class="h3">$</sup><span class="h1">4.75</span>/ Watt</p>
+                        <button class="button-one mb-4">Get Start</button>
+                        <h5>Stylizing</h5>
+                        <hr class="h-color mx-auto">
+                        <h5>Premium</h5>
+                        <hr class="h-color mx-auto">
+                        <h5>Installation</h5>
+                        <hr class="h-color mx-auto">
+                        <h5>Replacement</h5>
+                    </div>
+                </div>
+                <div class="col-lg-4 my-3 py-3">
+                    <div class="card-four shadow text-center my-0 my-sm-5 py-5">
+                        <h3 class="fw-bold mb-3">Energy Solutions</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum, rem. ipsum dolor sit amet.</p>
+                        <p><sup class="h3">$</sup><span class="h1">3.25</span>/ Watt</p>
+                        <button class="button-one mb-4">Get Start</button>
+                        <h5>Stylizing</h5>
+                        <hr class="h-color mx-auto">
+                        <h5>Premium</h5>
+                        <hr class="h-color mx-auto">
+                        <h5>Installation</h5>
+                        <hr class="h-color mx-auto">
+                        <h5>Replacement</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--  price area end -->
+    <!--  customer area start -->
+    <div class="bg-five">
+        <div class="container my-5 py-5">
+            <div class="row">
+                <div class="col-lg-12 ">
+                    <div class="customer text-center">
+                        <h1 class="fw-bold raju mb-5">Customers Of Our Solar Panels</h1>
+
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-9 mx-auto text-white">
+                    <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner mt-5">
+                            <div class="carousel-item active text-center">
+                                <img class="img-fluid noman " src="image/18.jpg" alt="">
+                                <h4 class="mt-4 fw-bold">Mr. john</h4>
+
+                                <p class=" mt-3">Lorem ipsum dolor sit amet, consectetur Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae, dignissimos!adipisicing elit. Tempora, hic sequi, veniam necessitatibus reiciendis magni maxime unde dicta. Et, placeat.</p>
+                            </div>
+                            <div class="carousel-item text-center">
+                                <img class="img-fluid noman " src="image/19.jpg" alt="">
+                                <h4 class="mt-4 fw-bold">Mr. Harry </h4>
+
+                                <p class=" mt-3">Lorem ipsum dolor sit amet, consectetur Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae, dignissimos!adipisicing elit. Tempora, hic sequi, veniam necessitatibus reiciendis magni maxime unde dicta. Et, placeat.</p>
+                            </div>
+                            <div class="carousel-item text-center">
+                                <img class="img-fluid noman " src="image/20.jpg" alt="">
+                                <h4 class="mt-4 fw-bold">Mr. Watson</h4>
+
+                                <p class=" mt-3">Lorem ipsum dolor sit amet, consectetur Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae, dignissimos!adipisicing elit. Tempora, hic sequi, veniam necessitatibus reiciendis magni maxime unde dicta. Et, placeat.</p>
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--  customer area end -->
+    <!--  contact area end -->
+    <div class="container py-5 mt-5 mb-0 mb-sm-5" id="contact">
+        <div class="row">
+            <div class="col-lg-7 my-auto">
+                <div class="pe-2 pe-sm-5 mb-5 mb-sm-0">
+                    <p class="h5 c-one mb-3">CONTACT US</p>
+                    <p class="h1 text-color fw-bold">GET IN TOUCH </p>
+                    <p class="mt-3 c-two">
+                        Desire that they cannot foresee the pain and trouble that are bound
+                        equal blame belongs to their duty.
+                    </p>
+                    <form class="contact-form wow fadeInLeft" id="reused_form" action="POST">
+                        <div class="row my-form">
+                            <div class="col-lg-12">
+                                <div class="form-floating mt-4">
+                                    <input name="name" id="name" type="text" class="form-control" placeholder="Your Name*" required="">
+                                    <label for="name">Your Name</label>
+                                </div>
+                            </div>
+                            <div class="col-lg-12">
+                                <div class="form-floating mt-4">
+                                    <input name="email" id="email" type="email" class="form-control" placeholder="Your Email*" required="">
+                                    <label for="email">Email address</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row my-form">
+                            <div class="col-lg-12">
+                                <div class="form-floating mt-4">
+                                    <input type="text" class="form-control" name="subject" id="subject" placeholder="Your Subject.." required="">
+                                    <label for="subject">Your Subject</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row my-form">
+                            <div class="col-lg-12">
+                                <div class="form-floating mt-4">
+                                    <textarea style="height: 150px" name="comments" id="comments" cols="20" rows="50" class="form-control" placeholder="Your message..."></textarea>
+                                    <label for="comments">Your message</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row mt-5">
+                            <div class="col-lg-12 text-center">
+                                <button type="submit" class="btn button-one">
+                                    Send message
+                                </button>
+                            </div>
+                        </div>
+                    </form>
+
+                    <div class="pt-5 mt-5" id="success_message" style="display:none; ">
+                        <h3 class="text-success">Your message submit successfully!</h3>
+                    </div>
+                    <div id="error_message" style="display:none; ">
+                        <h3 class="text-danger">Error</h3> Sorry there was an error sending your form.
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-5">
+                <div class=" contact-area my-5 py-5">
+                    <h5 class="ms-5 fw-bold">OUR LOCATION</h5>
+                    <div class="d-flex ms-5 mt-3">
+                        <div class="flex-shrink-0">
+                            <i class="bi bi-geo-alt-fill"></i>
+                        </div>
+                        <div class="flex-grow-1 ms-3">
+                            <p> Las Palmas, 35572</p>
+                            <p class="mb-5"> Spain</p>
+                        </div>
+                    </div>
+                    <h5 class="ms-5 fw-bold">QUICK CONTACT</h5>
+                    <div class="d-flex ms-5 mt-3">
+                        <div class="flex-shrink-0">
+                            <i class="bi bi-envelope-fill"></i>
+                        </div>
+                        <div class="flex-grow-1 ms-3">
+                            <p> cad-boxx.com</p>
+                        </div>
+                    </div>
+                    <div class="d-flex ms-5 ">
+                        <div class="flex-shrink-0">
+                            <i class="bi bi-telephone-fill"></i>
+                        </div>
+                        <div class="flex-grow-1 ms-3">
+                            <p> +34 631821452</p>
+                        </div>
+                    </div>
+                    <h5 class="ms-5 fw-bold mt-4">OPENING HOURS</h5>
+                    <div class="d-flex ms-5 mt-3">
+                        <div class="flex-grow-1 ">
+                            <p> From Monday - Saturday</p>
+                            <p>9:00 AM - 9:00 PM</p>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!--  contact area end -->
+    <!--    footer start -->
+    <div class="pranto ">
+        <div class="container my-0 my-sm-5 py-5 ">
+            <div class="row">
+                <div class="col-lg-4">
+                    <div class="fuga">
+                        <a class="navbar-brand pe-5" href="#">
+                            <img class="shuvo" src="image/logo.png" alt="">
+
+                        </a>
+                        <p class="h3 mt-5  fw-bold">ABOUT</p>
+                        <p class=" me-5 mt-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil, temporibus deleniti velit dolorem iusto? Eos!</p>
+
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <h5 class="">Quick Links</h5>
+                    <ul class="list-unstyled mukta pt-3 lh-lg ">
+                        <li><a href="#"> <i class="bi bi-arrow-right-short"></i> Home</a></li>
+                        <li><a href="#"> <i class="bi bi-arrow-right-short"></i> Models</a></li>
+                        <li><a href="#"> <i class="bi bi-arrow-right-short"></i> Joints</a></li>
+                        <li><a href="#"> <i class="bi bi-arrow-right-short"></i> Pricing</a></li>
+                        <li><a href="#"> <i class="bi bi-arrow-right-short"></i> Get Started</a></li>
+
+                    </ul>
+                </div>
+
+                <div class="col-lg-5">
+                    <h5 class="">Contact Info</h5>
+                    <ul class="list-unstyled mukta pt-3 lh-lg ">
+                        <li><a href="#"> <i class="bi bi-arrow-right-short"></i> Las Palmas 35572</a></li>
+                        <li><a href="#"> <i class="bi bi-arrow-right-short"></i> Spain</a></li>
+                        <li><a href="#"> <i class="bi bi-arrow-right-short"></i> cad-boxx.com</a></li>
+                        <li><a href="#"> <i class="bi bi-arrow-right-short"></i> +34 631821452</a></li>
+
+                    </ul>
+                </div>
+            </div>
+            <div class="row">
+                <div class="collg-4">
+                    <div class="icon">
+                        <a class="ms-0" href="#">
+                            <i class="bi bi-twitter"></i>
+                        </a>
+                        <a href="#">
+                            <i class="bi bi-instagram"></i>
+                        </a>
+                        <a href="#">
+                            <i class="bi bi-discord"></i>
+                        </a>
+                        <a href="#">
+                            <i class="bi bi-reddit"></i>
+                        </a>
+                        <a href="#">
+                            <i class="bi bi-youtube"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <hr class="my-5">
+
+        <div class="container ">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <p>Copyright © 2022 Ataur</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--    footer end -->
+
+    <div class="go-top active">
+        <i class="bi bi-arrow-up"></i>
+    </div>
+
+
+    <script src="demo/new-front/bootstrap/bootstrap.bundle.min.js"></script>
+    <script src="demo/new-front/js/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
+    <!--        counter js-->
+    <script src="https://unpkg.com/counterup2@2.0.2/dist/index.js"></script>
+
+    <script src="demo/new-front/js/script.js"></script>
+    <script src="demo/new-front/js/form.js"></script>
+
+
+</body>
+
 </html>

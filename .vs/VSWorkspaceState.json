@@ -2,9 +2,14 @@
   "ExpandedNodes": [
     "",
     "\\demo",
+    "\\demo\\new-front",
+    "\\demo\\new-front\\image",
     "\\demo\\superhands",
-    "\\demo\\superhands\\exporter"
+    "\\demo\\superhands\\exporter",
+    "\\demo\\superhands\\exporter\\aincraft",
+    "\\img",
+    "\\js"
   ],
-  "SelectedNode": "\\demo\\superhands\\exporter\\finally.html",
+  "SelectedNode": "\\img\\mb_4.png",
   "PreviewInSolutionExplorer": false
 }
